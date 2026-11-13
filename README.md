@@ -1,6 +1,7 @@
 # When to trust EEG, MEG, or both: adaptive modality switching for simultaneous M/EEG decoding
 
-**Kossi Tamplare**, under the supervision of **Dr Rajat Sharma** (Head of Department).
+**Kossi Tamplare**, GD Goenka University  
+Supervisor: **Dr Rajat Sharma**, Head of Department, GD Goenka University  
 This repository supports a joint paper currently in preparation.
 
 _Status: active research. Last updated 13 November 2026._

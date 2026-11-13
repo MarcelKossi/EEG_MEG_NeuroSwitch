@@ -1,7 +1,7 @@
 # Research journal
 
 Project: adaptive EEG/MEG modality switching on simultaneous M/EEG (ds000117).
-Kossi Tamplare. Supervisor: Dr Rajat Sharma.
+Kossi Tamplare, GD Goenka University. Supervisor: Dr Rajat Sharma (Head of Department).
 
 Entries are chronological. Each one records what was done, problems and how they were resolved, results, and decisions.
 
