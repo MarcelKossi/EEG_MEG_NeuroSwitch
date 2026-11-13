@@ -2,7 +2,7 @@
 
 ### Progress presentation
 
-**Presenter:** Kossi Tamplare  ·  **Supervisor:** Dr Rajat Sharma, Head of Department
+**Presenter:** Kossi Tamplare  ·  **Supervisor:** Dr Rajat Sharma, Head of Department  ·  GD Goenka University
 
 ---
 
