@@ -1,0 +1,28 @@
+# Raw and preprocessed data are never committed (dataset: OpenNeuro ds000117)
+data/
+derivatives/
+*.fif
+*.npz
+*.dat
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Internal working notes (not part of the public repository)
+internal/
+
+# Superseded local copies (9 Nov 2026 versions)
+/eegmeg_pipeline/
+/eegmeg_pipeline.zip
+/Progress_Presentation_EEG_MEG_Switching.md
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+code/tools/server_settings.ps1

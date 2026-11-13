@@ -1,0 +1,15 @@
+# Software environment used on the lab server (Python 3.12.3, Ubuntu, NVIDIA driver 550 / CUDA 12.4).
+# Install PyTorch FIRST from the CUDA 12.6 index, then the rest with the constraint file:
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cu126
+#   pip freeze | grep -i "^torch" > constraints.txt
+#   pip install -r requirements.txt -c constraints.txt
+torch==2.14.1
+mne==1.13.2
+mne-bids==0.20.0
+numpy==2.5.4
+scikit-learn==1.9.1
+pandas==3.1.1
+scipy
+joblib
+braindecode==2.0.0
+openneuro-py==2026.9.1

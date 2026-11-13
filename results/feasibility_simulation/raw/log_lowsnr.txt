@@ -1,0 +1,16 @@
+0 {'EEG': 0.683, 'MEG': 0.703, 'Early fusion': 0.75, 'Late fusion': 0.773, 'Switch: confidence': 0.767, 'Switch: learned gate': 0.75, 'Switch: subject-level': 0.75}
+1 {'EEG': 0.717, 'MEG': 0.77, 'Early fusion': 0.793, 'Late fusion': 0.797, 'Switch: confidence': 0.807, 'Switch: learned gate': 0.79, 'Switch: subject-level': 0.793}
+2 {'EEG': 0.59, 'MEG': 0.64, 'Early fusion': 0.75, 'Late fusion': 0.653, 'Switch: confidence': 0.71, 'Switch: learned gate': 0.74, 'Switch: subject-level': 0.75}
+3 {'EEG': 0.63, 'MEG': 0.59, 'Early fusion': 0.66, 'Late fusion': 0.64, 'Switch: confidence': 0.64, 'Switch: learned gate': 0.643, 'Switch: subject-level': 0.66}
+4 {'EEG': 0.743, 'MEG': 0.797, 'Early fusion': 0.893, 'Late fusion': 0.833, 'Switch: confidence': 0.857, 'Switch: learned gate': 0.88, 'Switch: subject-level': 0.893}
+5 {'EEG': 0.61, 'MEG': 0.55, 'Early fusion': 0.677, 'Late fusion': 0.613, 'Switch: confidence': 0.637, 'Switch: learned gate': 0.68, 'Switch: subject-level': 0.677}
+6 {'EEG': 0.557, 'MEG': 0.503, 'Early fusion': 0.527, 'Late fusion': 0.577, 'Switch: confidence': 0.553, 'Switch: learned gate': 0.577, 'Switch: subject-level': 0.547}
+7 {'EEG': 0.55, 'MEG': 0.627, 'Early fusion': 0.687, 'Late fusion': 0.61, 'Switch: confidence': 0.637, 'Switch: learned gate': 0.65, 'Switch: subject-level': 0.687}
+8 {'EEG': 0.583, 'MEG': 0.473, 'Early fusion': 0.507, 'Late fusion': 0.54, 'Switch: confidence': 0.517, 'Switch: learned gate': 0.563, 'Switch: subject-level': 0.557}
+9 {'EEG': 0.52, 'MEG': 0.563, 'Early fusion': 0.547, 'Late fusion': 0.523, 'Switch: confidence': 0.533, 'Switch: learned gate': 0.53, 'Switch: subject-level': 0.55}
+10 {'EEG': 0.593, 'MEG': 0.617, 'Early fusion': 0.707, 'Late fusion': 0.677, 'Switch: confidence': 0.687, 'Switch: learned gate': 0.683, 'Switch: subject-level': 0.68}
+11 {'EEG': 0.613, 'MEG': 0.613, 'Early fusion': 0.66, 'Late fusion': 0.68, 'Switch: confidence': 0.7, 'Switch: learned gate': 0.66, 'Switch: subject-level': 0.623}
+12 {'EEG': 0.617, 'MEG': 0.647, 'Early fusion': 0.693, 'Late fusion': 0.677, 'Switch: confidence': 0.687, 'Switch: learned gate': 0.677, 'Switch: subject-level': 0.677}
+13 {'EEG': 0.503, 'MEG': 0.457, 'Early fusion': 0.443, 'Late fusion': 0.47, 'Switch: confidence': 0.49, 'Switch: learned gate': 0.443, 'Switch: subject-level': 0.437}
+14 {'EEG': 0.683, 'MEG': 0.89, 'Early fusion': 0.927, 'Late fusion': 0.88, 'Switch: confidence': 0.903, 'Switch: learned gate': 0.917, 'Switch: subject-level': 0.927}
+15 {'EEG': 0.8, 'MEG': 0.893, 'Early fusion': 0.897, 'Late fusion': 0.903, 'Switch: confidence': 0.907, 'Switch: learned gate': 0.897, 'Switch: subject-level': 0.897}
