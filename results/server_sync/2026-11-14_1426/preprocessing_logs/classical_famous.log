@@ -1,0 +1,72 @@
+11 subjects, task famous_vs_unfamiliar
+sub-01 famous_vs_unfamiliar: exists, skipping
+sub-06 famous_vs_unfamiliar fold run-1: EEG 0.500 MEG 0.646 fused 0.583 gate 0.615
+sub-04 famous_vs_unfamiliar fold run-1: EEG 0.516 MEG 0.560 fused 0.582 gate 0.604
+sub-11 famous_vs_unfamiliar fold run-1: EEG 0.552 MEG 0.469 fused 0.531 gate 0.552
+sub-02 famous_vs_unfamiliar fold run-1: EEG 0.531 MEG 0.552 fused 0.531 gate 0.531
+sub-07 famous_vs_unfamiliar fold run-1: EEG 0.541 MEG 0.622 fused 0.551 gate 0.582
+sub-09 famous_vs_unfamiliar fold run-1: EEG 0.587 MEG 0.467 fused 0.554 gate 0.522
+sub-05 famous_vs_unfamiliar fold run-1: EEG 0.537 MEG 0.526 fused 0.621 gate 0.621
+sub-08 famous_vs_unfamiliar fold run-1: EEG 0.489 MEG 0.574 fused 0.500 gate 0.521
+sub-03 famous_vs_unfamiliar fold run-1: EEG 0.510 MEG 0.460 fused 0.460 gate 0.490
+sub-10 famous_vs_unfamiliar fold run-1: EEG 0.404 MEG 0.475 fused 0.485 gate 0.434
+sub-06 famous_vs_unfamiliar fold run-2: EEG 0.558 MEG 0.558 fused 0.537 gate 0.547
+sub-08 famous_vs_unfamiliar fold run-2: EEG 0.495 MEG 0.571 fused 0.593 gate 0.538
+sub-04 famous_vs_unfamiliar fold run-2: EEG 0.554 MEG 0.578 fused 0.506 gate 0.627
+sub-11 famous_vs_unfamiliar fold run-2: EEG 0.567 MEG 0.567 fused 0.567 gate 0.598
+sub-09 famous_vs_unfamiliar fold run-2: EEG 0.453 MEG 0.558 fused 0.593 gate 0.488
+sub-02 famous_vs_unfamiliar fold run-2: EEG 0.615 MEG 0.594 fused 0.562 gate 0.562
+sub-07 famous_vs_unfamiliar fold run-2: EEG 0.551 MEG 0.612 fused 0.653 gate 0.592
+sub-05 famous_vs_unfamiliar fold run-2: EEG 0.475 MEG 0.596 fused 0.687 gate 0.626
+sub-10 famous_vs_unfamiliar fold run-2: EEG 0.571 MEG 0.520 fused 0.520 gate 0.541
+sub-03 famous_vs_unfamiliar fold run-2: EEG 0.608 MEG 0.557 fused 0.505 gate 0.546
+sub-06 famous_vs_unfamiliar fold run-3: EEG 0.490 MEG 0.551 fused 0.571 gate 0.551
+sub-08 famous_vs_unfamiliar fold run-3: EEG 0.424 MEG 0.543 fused 0.533 gate 0.565
+sub-04 famous_vs_unfamiliar fold run-3: EEG 0.521 MEG 0.583 fused 0.500 gate 0.562
+sub-11 famous_vs_unfamiliar fold run-3: EEG 0.500 MEG 0.520 fused 0.500 gate 0.490
+sub-09 famous_vs_unfamiliar fold run-3: EEG 0.505 MEG 0.634 fused 0.538 gate 0.570
+sub-06 famous_vs_unfamiliar fold run-4: EEG 0.535 MEG 0.566 fused 0.616 gate 0.596
+sub-08 famous_vs_unfamiliar fold run-4: EEG 0.515 MEG 0.546 fused 0.485 gate 0.526
+sub-02 famous_vs_unfamiliar fold run-3: EEG 0.489 MEG 0.596 fused 0.596 gate 0.638
+sub-07 famous_vs_unfamiliar fold run-3: EEG 0.566 MEG 0.606 fused 0.566 gate 0.586
+sub-05 famous_vs_unfamiliar fold run-3: EEG 0.465 MEG 0.475 fused 0.535 gate 0.535
+sub-10 famous_vs_unfamiliar fold run-3: EEG 0.561 MEG 0.571 fused 0.582 gate 0.571
+sub-03 famous_vs_unfamiliar fold run-3: EEG 0.531 MEG 0.458 fused 0.542 gate 0.510
+sub-04 famous_vs_unfamiliar fold run-4: EEG 0.629 MEG 0.629 fused 0.588 gate 0.639
+sub-08 famous_vs_unfamiliar fold run-5: EEG 0.505 MEG 0.444 fused 0.576 gate 0.525
+sub-06 famous_vs_unfamiliar fold run-5: EEG 0.596 MEG 0.617 fused 0.660 gate 0.660
+sub-11 famous_vs_unfamiliar fold run-4: EEG 0.604 MEG 0.510 fused 0.583 gate 0.615
+sub-09 famous_vs_unfamiliar fold run-4: EEG 0.381 MEG 0.546 fused 0.588 gate 0.557
+sub-07 famous_vs_unfamiliar fold run-4: EEG 0.484 MEG 0.526 fused 0.526 gate 0.547
+sub-02 famous_vs_unfamiliar fold run-4: EEG 0.484 MEG 0.632 fused 0.642 gate 0.579
+sub-05 famous_vs_unfamiliar fold run-4: EEG 0.463 MEG 0.505 fused 0.621 gate 0.547
+sub-10 famous_vs_unfamiliar fold run-4: EEG 0.449 MEG 0.531 fused 0.592 gate 0.510
+sub-08 famous_vs_unfamiliar fold run-6: EEG 0.474 MEG 0.546 fused 0.608 gate 0.557
+sub-08 famous_vs_unfamiliar DONE  balanced acc: EEG 0.484, MEG 0.537, Early fusion 0.549, Late fusion 0.525, Switch: learned gate 0.539
+sub-03 famous_vs_unfamiliar fold run-4: EEG 0.480 MEG 0.531 fused 0.469 gate 0.531
+sub-06 famous_vs_unfamiliar fold run-6: EEG 0.632 MEG 0.558 fused 0.558 gate 0.611
+sub-06 famous_vs_unfamiliar DONE  balanced acc: EEG 0.551, MEG 0.582, Early fusion 0.588, Late fusion 0.574, Switch: learned gate 0.596
+sub-04 famous_vs_unfamiliar fold run-5: EEG 0.591 MEG 0.602 fused 0.568 gate 0.591
+sub-11 famous_vs_unfamiliar fold run-5: EEG 0.448 MEG 0.510 fused 0.573 gate 0.479
+sub-09 famous_vs_unfamiliar fold run-5: EEG 0.527 MEG 0.432 fused 0.500 gate 0.473
+sub-07 famous_vs_unfamiliar fold run-5: EEG 0.573 MEG 0.479 fused 0.573 gate 0.531
+sub-02 famous_vs_unfamiliar fold run-5: EEG 0.559 MEG 0.731 fused 0.710 gate 0.699
+sub-10 famous_vs_unfamiliar fold run-5: EEG 0.500 MEG 0.553 fused 0.596 gate 0.638
+sub-05 famous_vs_unfamiliar fold run-5: EEG 0.592 MEG 0.418 fused 0.500 gate 0.490
+sub-03 famous_vs_unfamiliar fold run-5: EEG 0.510 MEG 0.459 fused 0.561 gate 0.469
+sub-04 famous_vs_unfamiliar fold run-6: EEG 0.505 MEG 0.516 fused 0.602 gate 0.538
+sub-04 famous_vs_unfamiliar DONE  balanced acc: EEG 0.553, MEG 0.578, Early fusion 0.558, Late fusion 0.584, Switch: learned gate 0.593
+sub-11 famous_vs_unfamiliar fold run-6: EEG 0.573 MEG 0.656 fused 0.677 gate 0.635
+sub-11 famous_vs_unfamiliar DONE  balanced acc: EEG 0.541, MEG 0.539, Early fusion 0.572, Late fusion 0.554, Switch: learned gate 0.561
+sub-09 famous_vs_unfamiliar fold run-6: EEG 0.512 MEG 0.512 fused 0.581 gate 0.512
+sub-09 famous_vs_unfamiliar DONE  balanced acc: EEG 0.493, MEG 0.528, Early fusion 0.561, Late fusion 0.496, Switch: learned gate 0.523
+sub-07 famous_vs_unfamiliar fold run-6: EEG 0.551 MEG 0.612 fused 0.531 gate 0.551
+sub-07 famous_vs_unfamiliar DONE  balanced acc: EEG 0.545, MEG 0.577, Early fusion 0.567, Late fusion 0.560, Switch: learned gate 0.565
+sub-02 famous_vs_unfamiliar fold run-6: EEG 0.500 MEG 0.532 fused 0.596 gate 0.553
+sub-02 famous_vs_unfamiliar DONE  balanced acc: EEG 0.530, MEG 0.606, Early fusion 0.606, Late fusion 0.613, Switch: learned gate 0.593
+sub-10 famous_vs_unfamiliar fold run-6: EEG 0.474 MEG 0.515 fused 0.557 gate 0.515
+sub-10 famous_vs_unfamiliar DONE  balanced acc: EEG 0.493, MEG 0.527, Early fusion 0.555, Late fusion 0.497, Switch: learned gate 0.534
+sub-05 famous_vs_unfamiliar fold run-6: EEG 0.525 MEG 0.515 fused 0.566 gate 0.535
+sub-05 famous_vs_unfamiliar DONE  balanced acc: EEG 0.509, MEG 0.506, Early fusion 0.588, Late fusion 0.530, Switch: learned gate 0.559
+sub-03 famous_vs_unfamiliar fold run-6: EEG 0.510 MEG 0.530 fused 0.480 gate 0.540
+sub-03 famous_vs_unfamiliar DONE  balanced acc: EEG 0.524, MEG 0.499, Early fusion 0.502, Late fusion 0.499, Switch: learned gate 0.514

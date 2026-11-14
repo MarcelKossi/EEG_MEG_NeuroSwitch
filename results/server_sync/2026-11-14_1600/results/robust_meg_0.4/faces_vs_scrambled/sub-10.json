@@ -1,0 +1,95 @@
+{
+  "metrics": {
+    "EEG": {
+      "accuracy": 0.6274285714285714,
+      "balanced_accuracy": 0.6079620345525585,
+      "auc": 0.671044579390858
+    },
+    "MAG": {
+      "accuracy": 0.6708571428571428,
+      "balanced_accuracy": 0.6594613519747682,
+      "auc": 0.6610618792072682
+    },
+    "GRAD": {
+      "accuracy": 0.7428571428571429,
+      "balanced_accuracy": 0.7306406816363037,
+      "auc": 0.7351657016428941
+    },
+    "MEG": {
+      "accuracy": 0.7337142857142858,
+      "balanced_accuracy": 0.7194811231935225,
+      "auc": 0.749070281975239
+    },
+    "Early fusion": {
+      "accuracy": 0.7817142857142857,
+      "balanced_accuracy": 0.767508708751118,
+      "auc": 0.8293320152520831
+    },
+    "Late fusion": {
+      "accuracy": 0.7188571428571429,
+      "balanced_accuracy": 0.710937132231794,
+      "auc": 0.7663289083462788
+    },
+    "Switch: confidence": {
+      "accuracy": 0.7451428571428571,
+      "balanced_accuracy": 0.7358012051028575,
+      "auc": 0.744609989172904
+    },
+    "Switch: learned gate": {
+      "accuracy": 0.7954285714285714,
+      "balanced_accuracy": 0.7812308760532882,
+      "auc": 0.8091842018547286
+    },
+    "Switch: subject-level": {
+      "accuracy": 0.7817142857142857,
+      "balanced_accuracy": 0.767508708751118,
+      "auc": 0.8293320152520831
+    },
+    "Oracle EEG/MEG": {
+      "accuracy": 0.888,
+      "balanced_accuracy": 0.8807518947417973
+    },
+    "Oracle 3-way": {
+      "accuracy": 0.936,
+      "balanced_accuracy": 0.9287794802993927
+    }
+  },
+  "subject": 10,
+  "task": "faces_vs_scrambled",
+  "method": "classical-LDA",
+  "n_trials": 875,
+  "corruption": {
+    "target": "meg",
+    "rate": 0.4,
+    "gain": 5.0,
+    "seed": 0,
+    "eeg_trials_hit": 0,
+    "meg_trials_hit": 344
+  },
+  "class_counts": {
+    "0": 291,
+    "1": 584
+  },
+  "subject_level_choice_per_fold": [
+    "fused",
+    "fused",
+    "fused",
+    "fused",
+    "fused",
+    "fused"
+  ],
+  "minutes": 1.7,
+  "only_eeg_correct": 0.15428571428571428,
+  "only_meg_correct": 0.26057142857142856,
+  "both_wrong": 0.112,
+  "gate_confidence_share": {
+    "eeg": 0.3909,
+    "meg": 0.4149,
+    "fused": 0.1943
+  },
+  "gate_learned_share": {
+    "eeg": 0.1509,
+    "meg": 0.3109,
+    "fused": 0.5383
+  }
+}

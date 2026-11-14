@@ -1,0 +1,113 @@
+16 subjects, task faces_vs_scrambled
+sub-16 faces_vs_scrambled fold run-1: EEG 0.716 MEG 0.898 fused 0.875 gate 0.920
+sub-07 faces_vs_scrambled fold run-1: EEG 0.685 MEG 0.781 fused 0.788 gate 0.877
+sub-12 faces_vs_scrambled fold run-1: EEG 0.797 MEG 0.841 fused 0.877 gate 0.935
+sub-08 faces_vs_scrambled fold run-1: EEG 0.681 MEG 0.812 fused 0.833 gate 0.882
+sub-15 faces_vs_scrambled fold run-1: EEG 0.685 MEG 0.902 fused 0.937 gate 0.951
+sub-01 faces_vs_scrambled fold run-1: EEG 0.637 MEG 0.829 fused 0.863 gate 0.904
+sub-03 faces_vs_scrambled fold run-1: EEG 0.673 MEG 0.755 fused 0.769 gate 0.830
+sub-11 faces_vs_scrambled fold run-1: EEG 0.759 MEG 0.800 fused 0.841 gate 0.841
+sub-04 faces_vs_scrambled fold run-1: EEG 0.754 MEG 0.821 fused 0.873 gate 0.896
+sub-13 faces_vs_scrambled fold run-1: EEG 0.799 MEG 0.826 fused 0.854 gate 0.903
+sub-10 faces_vs_scrambled fold run-1: EEG 0.735 MEG 0.816 fused 0.864 gate 0.905
+sub-14 faces_vs_scrambled fold run-1: EEG 0.664 MEG 0.808 fused 0.911 gate 0.849
+sub-05 faces_vs_scrambled fold run-1: EEG 0.783 MEG 0.895 fused 0.867 gate 0.916
+sub-09 faces_vs_scrambled fold run-1: EEG 0.702 MEG 0.830 fused 0.858 gate 0.908
+sub-02 faces_vs_scrambled fold run-1: EEG 0.630 MEG 0.692 fused 0.740 gate 0.795
+sub-06 faces_vs_scrambled fold run-1: EEG 0.694 MEG 0.715 fused 0.792 gate 0.861
+sub-12 faces_vs_scrambled fold run-2: EEG 0.730 MEG 0.865 fused 0.872 gate 0.894
+sub-16 faces_vs_scrambled fold run-2: EEG 0.792 MEG 0.847 fused 0.931 gate 0.889
+sub-15 faces_vs_scrambled fold run-2: EEG 0.669 MEG 0.903 fused 0.952 gate 0.952
+sub-13 faces_vs_scrambled fold run-2: EEG 0.718 MEG 0.796 fused 0.859 gate 0.901
+sub-11 faces_vs_scrambled fold run-2: EEG 0.721 MEG 0.762 fused 0.816 gate 0.837
+sub-01 faces_vs_scrambled fold run-2: EEG 0.616 MEG 0.849 fused 0.822 gate 0.836
+sub-08 faces_vs_scrambled fold run-2: EEG 0.734 MEG 0.835 fused 0.849 gate 0.892
+sub-07 faces_vs_scrambled fold run-2: EEG 0.779 MEG 0.793 fused 0.890 gate 0.917
+sub-03 faces_vs_scrambled fold run-2: EEG 0.644 MEG 0.774 fused 0.767 gate 0.795
+sub-04 faces_vs_scrambled fold run-2: EEG 0.746 MEG 0.815 fused 0.862 gate 0.892
+sub-05 faces_vs_scrambled fold run-2: EEG 0.682 MEG 0.872 fused 0.919 gate 0.966
+sub-10 faces_vs_scrambled fold run-2: EEG 0.671 MEG 0.842 fused 0.856 gate 0.856
+sub-14 faces_vs_scrambled fold run-2: EEG 0.593 MEG 0.855 fused 0.876 gate 0.890
+sub-09 faces_vs_scrambled fold run-2: EEG 0.739 MEG 0.813 fused 0.866 gate 0.866
+sub-16 faces_vs_scrambled fold run-3: EEG 0.708 MEG 0.942 fused 0.892 gate 0.917
+sub-12 faces_vs_scrambled fold run-3: EEG 0.762 MEG 0.889 fused 0.889 gate 0.913
+sub-02 faces_vs_scrambled fold run-2: EEG 0.715 MEG 0.826 fused 0.826 gate 0.854
+sub-13 faces_vs_scrambled fold run-3: EEG 0.685 MEG 0.795 fused 0.801 gate 0.829
+sub-06 faces_vs_scrambled fold run-2: EEG 0.736 MEG 0.778 fused 0.840 gate 0.861
+sub-15 faces_vs_scrambled fold run-3: EEG 0.731 MEG 0.903 fused 0.938 gate 0.945
+sub-11 faces_vs_scrambled fold run-3: EEG 0.714 MEG 0.762 fused 0.796 gate 0.823
+sub-01 faces_vs_scrambled fold run-3: EEG 0.584 MEG 0.799 fused 0.812 gate 0.846
+sub-07 faces_vs_scrambled fold run-3: EEG 0.716 MEG 0.818 fused 0.831 gate 0.872
+sub-08 faces_vs_scrambled fold run-3: EEG 0.633 MEG 0.813 fused 0.871 gate 0.856
+sub-04 faces_vs_scrambled fold run-3: EEG 0.671 MEG 0.804 fused 0.860 gate 0.874
+sub-03 faces_vs_scrambled fold run-3: EEG 0.575 MEG 0.712 fused 0.671 gate 0.726
+sub-05 faces_vs_scrambled fold run-3: EEG 0.728 MEG 0.864 fused 0.925 gate 0.918
+sub-16 faces_vs_scrambled fold run-4: EEG 0.788 MEG 0.864 fused 0.932 gate 0.939
+sub-12 faces_vs_scrambled fold run-4: EEG 0.690 MEG 0.824 fused 0.838 gate 0.866
+sub-13 faces_vs_scrambled fold run-4: EEG 0.727 MEG 0.842 fused 0.878 gate 0.885
+sub-10 faces_vs_scrambled fold run-3: EEG 0.687 MEG 0.776 fused 0.830 gate 0.864
+sub-04 faces_vs_scrambled fold run-4: EEG 0.800 MEG 0.871 fused 0.900 gate 0.914
+sub-07 faces_vs_scrambled fold run-4: EEG 0.762 MEG 0.769 fused 0.811 gate 0.888
+sub-11 faces_vs_scrambled fold run-4: EEG 0.731 MEG 0.800 fused 0.841 gate 0.890
+sub-08 faces_vs_scrambled fold run-4: EEG 0.664 MEG 0.822 fused 0.884 gate 0.856
+sub-09 faces_vs_scrambled fold run-3: EEG 0.723 MEG 0.794 fused 0.844 gate 0.858
+sub-06 faces_vs_scrambled fold run-3: EEG 0.664 MEG 0.753 fused 0.801 gate 0.781
+sub-15 faces_vs_scrambled fold run-4: EEG 0.626 MEG 0.946 fused 0.946 gate 0.966
+sub-14 faces_vs_scrambled fold run-3: EEG 0.673 MEG 0.850 fused 0.905 gate 0.912
+sub-01 faces_vs_scrambled fold run-4: EEG 0.641 MEG 0.807 fused 0.869 gate 0.807
+sub-03 faces_vs_scrambled fold run-4: EEG 0.646 MEG 0.701 fused 0.789 gate 0.769
+sub-02 faces_vs_scrambled fold run-3: EEG 0.750 MEG 0.743 fused 0.786 gate 0.786
+sub-16 faces_vs_scrambled fold run-5: EEG 0.776 MEG 0.904 fused 0.944 gate 0.944
+sub-12 faces_vs_scrambled fold run-5: EEG 0.733 MEG 0.855 fused 0.809 gate 0.878
+sub-13 faces_vs_scrambled fold run-5: EEG 0.792 MEG 0.854 fused 0.868 gate 0.917
+sub-04 faces_vs_scrambled fold run-5: EEG 0.701 MEG 0.791 fused 0.821 gate 0.858
+sub-05 faces_vs_scrambled fold run-4: EEG 0.736 MEG 0.792 fused 0.847 gate 0.882
+sub-07 faces_vs_scrambled fold run-5: EEG 0.706 MEG 0.776 fused 0.860 gate 0.846
+sub-08 faces_vs_scrambled fold run-5: EEG 0.689 MEG 0.811 fused 0.851 gate 0.899
+sub-10 faces_vs_scrambled fold run-4: EEG 0.669 MEG 0.766 fused 0.731 gate 0.766
+sub-11 faces_vs_scrambled fold run-5: EEG 0.715 MEG 0.674 fused 0.799 gate 0.778
+sub-09 faces_vs_scrambled fold run-4: EEG 0.686 MEG 0.821 fused 0.893 gate 0.907
+sub-15 faces_vs_scrambled fold run-5: EEG 0.653 MEG 0.806 fused 0.861 gate 0.861
+sub-03 faces_vs_scrambled fold run-5: EEG 0.662 MEG 0.779 fused 0.759 gate 0.814
+sub-16 faces_vs_scrambled fold run-6: EEG 0.773 MEG 0.879 fused 0.871 gate 0.886
+sub-16 faces_vs_scrambled DONE  balanced acc: EEG 0.754, MEG 0.884, Early fusion 0.908, Late fusion 0.830, Switch: learned gate 0.916
+sub-06 faces_vs_scrambled fold run-4: EEG 0.747 MEG 0.795 fused 0.774 gate 0.890
+sub-12 faces_vs_scrambled fold run-6: EEG 0.763 MEG 0.793 fused 0.844 gate 0.867
+sub-12 faces_vs_scrambled DONE  balanced acc: EEG 0.733, MEG 0.834, Early fusion 0.848, Late fusion 0.825, Switch: learned gate 0.887
+sub-01 faces_vs_scrambled fold run-5: EEG 0.589 MEG 0.815 fused 0.829 gate 0.836
+sub-04 faces_vs_scrambled fold run-6: EEG 0.652 MEG 0.865 fused 0.887 gate 0.908
+sub-04 faces_vs_scrambled DONE  balanced acc: EEG 0.710, MEG 0.819, Early fusion 0.850, Late fusion 0.817, Switch: learned gate 0.875
+sub-14 faces_vs_scrambled fold run-4: EEG 0.621 MEG 0.766 fused 0.821 gate 0.834
+sub-13 faces_vs_scrambled fold run-6: EEG 0.762 MEG 0.776 fused 0.811 gate 0.825
+sub-13 faces_vs_scrambled DONE  balanced acc: EEG 0.740, MEG 0.802, Early fusion 0.831, Late fusion 0.786, Switch: learned gate 0.868
+sub-02 faces_vs_scrambled fold run-4: EEG 0.676 MEG 0.768 fused 0.789 gate 0.768
+sub-08 faces_vs_scrambled fold run-6: EEG 0.655 MEG 0.862 fused 0.890 gate 0.910
+sub-08 faces_vs_scrambled DONE  balanced acc: EEG 0.664, MEG 0.812, Early fusion 0.852, Late fusion 0.768, Switch: learned gate 0.874
+sub-07 faces_vs_scrambled fold run-6: EEG 0.706 MEG 0.741 fused 0.811 gate 0.832
+sub-07 faces_vs_scrambled DONE  balanced acc: EEG 0.711, MEG 0.774, Early fusion 0.814, Late fusion 0.781, Switch: learned gate 0.864
+sub-05 faces_vs_scrambled fold run-5: EEG 0.669 MEG 0.845 fused 0.878 gate 0.885
+sub-11 faces_vs_scrambled fold run-6: EEG 0.745 MEG 0.745 fused 0.793 gate 0.834
+sub-11 faces_vs_scrambled DONE  balanced acc: EEG 0.713, MEG 0.749, Early fusion 0.805, Late fusion 0.778, Switch: learned gate 0.823
+sub-09 faces_vs_scrambled fold run-5: EEG 0.653 MEG 0.814 fused 0.831 gate 0.856
+sub-15 faces_vs_scrambled fold run-6: EEG 0.697 MEG 0.938 fused 0.917 gate 0.952
+sub-15 faces_vs_scrambled DONE  balanced acc: EEG 0.664, MEG 0.903, Early fusion 0.922, Late fusion 0.796, Switch: learned gate 0.937
+sub-03 faces_vs_scrambled fold run-6: EEG 0.595 MEG 0.689 fused 0.743 gate 0.770
+sub-03 faces_vs_scrambled DONE  balanced acc: EEG 0.615, MEG 0.721, Early fusion 0.725, Late fusion 0.688, Switch: learned gate 0.769
+sub-10 faces_vs_scrambled fold run-5: EEG 0.604 MEG 0.847 fused 0.840 gate 0.854
+sub-06 faces_vs_scrambled fold run-5: EEG 0.734 MEG 0.818 fused 0.797 gate 0.846
+sub-01 faces_vs_scrambled fold run-6: EEG 0.639 MEG 0.782 fused 0.816 gate 0.810
+sub-01 faces_vs_scrambled DONE  balanced acc: EEG 0.600, MEG 0.807, Early fusion 0.830, Late fusion 0.737, Switch: learned gate 0.833
+sub-09 faces_vs_scrambled fold run-6: EEG 0.742 MEG 0.803 fused 0.833 gate 0.856
+sub-09 faces_vs_scrambled DONE  balanced acc: EEG 0.692, MEG 0.798, Early fusion 0.844, Late fusion 0.767, Switch: learned gate 0.864
+sub-05 faces_vs_scrambled fold run-6: EEG 0.738 MEG 0.862 fused 0.903 gate 0.931
+sub-05 faces_vs_scrambled DONE  balanced acc: EEG 0.710, MEG 0.848, Early fusion 0.886, Late fusion 0.813, Switch: learned gate 0.915
+sub-14 faces_vs_scrambled fold run-5: EEG 0.676 MEG 0.807 fused 0.876 gate 0.869
+sub-10 faces_vs_scrambled fold run-6: EEG 0.616 MEG 0.774 fused 0.808 gate 0.822
+sub-10 faces_vs_scrambled DONE  balanced acc: EEG 0.649, MEG 0.797, Early fusion 0.815, Late fusion 0.755, Switch: learned gate 0.832
+sub-02 faces_vs_scrambled fold run-5: EEG 0.636 MEG 0.707 fused 0.771 gate 0.786
+sub-06 faces_vs_scrambled fold run-6: EEG 0.736 MEG 0.785 fused 0.799 gate 0.840
+sub-06 faces_vs_scrambled DONE  balanced acc: EEG 0.710, MEG 0.763, Early fusion 0.789, Late fusion 0.787, Switch: learned gate 0.835
+sub-14 faces_vs_scrambled fold run-6: EEG 0.662 MEG 0.848 fused 0.841 gate 0.862
+sub-14 faces_vs_scrambled DONE  balanced acc: EEG 0.626, MEG 0.819, Early fusion 0.867, Late fusion 0.744, Switch: learned gate 0.866
+sub-02 faces_vs_scrambled fold run-6: EEG 0.696 MEG 0.790 fused 0.812 gate 0.862
+sub-02 faces_vs_scrambled DONE  balanced acc: EEG 0.671, MEG 0.749, Early fusion 0.779, Late fusion 0.728, Switch: learned gate 0.795

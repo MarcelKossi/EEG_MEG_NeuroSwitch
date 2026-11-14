@@ -1,0 +1,192 @@
+{
+  "metrics": {
+    "EEG": {
+      "accuracy": 0.752,
+      "balanced_accuracy": 0.7262833639316482,
+      "auc": 0.8100609612578262
+    },
+    "MEG": {
+      "accuracy": 0.8662857142857143,
+      "balanced_accuracy": 0.8610365767546957,
+      "auc": 0.9386327260744716
+    },
+    "Early fusion": {
+      "accuracy": 0.8628571428571429,
+      "balanced_accuracy": 0.8541578402297227,
+      "auc": 0.933725227133644
+    },
+    "Late fusion": {
+      "accuracy": 0.8822857142857143,
+      "balanced_accuracy": 0.8721608294497011,
+      "auc": 0.9498246481193805
+    },
+    "Switch: confidence": {
+      "accuracy": 0.8845714285714286,
+      "balanced_accuracy": 0.8755972555665396,
+      "auc": 0.9451995951607588
+    },
+    "Switch: learned gate": {
+      "accuracy": 0.8685714285714285,
+      "balanced_accuracy": 0.8567145647978157,
+      "auc": 0.9367497528597655
+    },
+    "Switch: subject-level": {
+      "accuracy": 0.8742857142857143,
+      "balanced_accuracy": 0.8670297274396273,
+      "auc": 0.9405333521630656
+    },
+    "Oracle EEG/MEG": {
+      "accuracy": 0.9542857142857143,
+      "balanced_accuracy": 0.9467883538106671
+    },
+    "Oracle 3-way": {
+      "accuracy": 0.9668571428571429,
+      "balanced_accuracy": 0.9631025514287059
+    }
+  },
+  "subject": 10,
+  "task": "faces_vs_scrambled",
+  "method": "deep-EEGNet",
+  "n_trials": 875,
+  "corruption": {
+    "target": "none",
+    "rate": 0.2,
+    "gain": 5.0,
+    "seed": 0,
+    "eeg_trials_hit": 0,
+    "meg_trials_hit": 0
+  },
+  "class_counts": {
+    "0": 291,
+    "1": 584
+  },
+  "subject_level_choice_per_fold": [
+    "meg",
+    "meg",
+    "meg",
+    "meg",
+    "meg",
+    "fused"
+  ],
+  "folds": [
+    {
+      "test_run": 1,
+      "val_run": 2,
+      "eeg": {
+        "epochs": 58,
+        "best_val_loss": 0.5333
+      },
+      "meg": {
+        "epochs": 55,
+        "best_val_loss": 0.2065
+      },
+      "fused": {
+        "epochs": 94,
+        "best_val_loss": 0.2264
+      }
+    },
+    {
+      "test_run": 2,
+      "val_run": 3,
+      "eeg": {
+        "epochs": 75,
+        "best_val_loss": 0.414
+      },
+      "meg": {
+        "epochs": 51,
+        "best_val_loss": 0.2089
+      },
+      "fused": {
+        "epochs": 71,
+        "best_val_loss": 0.2776
+      }
+    },
+    {
+      "test_run": 3,
+      "val_run": 4,
+      "eeg": {
+        "epochs": 65,
+        "best_val_loss": 0.582
+      },
+      "meg": {
+        "epochs": 44,
+        "best_val_loss": 0.3167
+      },
+      "fused": {
+        "epochs": 51,
+        "best_val_loss": 0.3515
+      }
+    },
+    {
+      "test_run": 4,
+      "val_run": 5,
+      "eeg": {
+        "epochs": 53,
+        "best_val_loss": 0.5977
+      },
+      "meg": {
+        "epochs": 55,
+        "best_val_loss": 0.315
+      },
+      "fused": {
+        "epochs": 35,
+        "best_val_loss": 0.3541
+      }
+    },
+    {
+      "test_run": 5,
+      "val_run": 6,
+      "eeg": {
+        "epochs": 54,
+        "best_val_loss": 0.5247
+      },
+      "meg": {
+        "epochs": 47,
+        "best_val_loss": 0.4643
+      },
+      "fused": {
+        "epochs": 40,
+        "best_val_loss": 0.4582
+      }
+    },
+    {
+      "test_run": 6,
+      "val_run": 1,
+      "eeg": {
+        "epochs": 57,
+        "best_val_loss": 0.4946
+      },
+      "meg": {
+        "epochs": 67,
+        "best_val_loss": 0.1729
+      },
+      "fused": {
+        "epochs": 76,
+        "best_val_loss": 0.257
+      }
+    }
+  ],
+  "hyperparameters": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 25,
+    "dropout": 0.5,
+    "seed": 42
+  },
+  "minutes": 3.39,
+  "only_eeg_correct": 0.088,
+  "only_meg_correct": 0.2022857142857143,
+  "both_wrong": 0.045714285714285714,
+  "gate_confidence_share": {
+    "eeg": 0.1257,
+    "meg": 0.4046,
+    "fused": 0.4697
+  },
+  "gate_learned_share": {
+    "eeg": 0.1554,
+    "meg": 0.496,
+    "fused": 0.3486
+  }
+}

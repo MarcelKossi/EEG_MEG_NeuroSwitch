@@ -123,3 +123,40 @@ Entries are chronological. Each one records what was done, problems and how they
 3. Preprocess the remaining subjects once the download is complete.
 4. Run the classical models on 16 subjects, then the group statistics.
 5. Time one full deep-learning subject.
+
+---
+
+## 14 Nov 2026: Full dataset, classical models on 16 subjects
+
+**Work**
+- Deployed pipeline v1.2 on the server.
+- Completed the download (16 subjects, ~83 GB).
+- Preprocessed all 16 subjects: **13,537 of 14,157 trials kept** (4.4 % rejected), 6.6–8.8 min per subject.
+- Ran the classical models for both tasks on all 16 subjects, and recomputed subject 01 with v1.2.
+
+**Results** (`results/real_data/2026-11-14_classical_16_subjects.md`)
+- **Faces vs scrambled.** The learned gate reached 87.7 %, against EEG 71.2 %, MEG 80.5 %, late fusion 82.1 % and early fusion 87.4 %. It beat EEG, MEG and late fusion in all 16 subjects (Holm p = 0.0001), and was level with early fusion (+0.3, p = 0.50).
+- **Famous vs unfamiliar.** All models are close to chance (EEG 53.2 %, MEG 56.1 %, early fusion 57.4 %, learned gate 57.0 %). The gate beat EEG only (+3.9, p = 0.002).
+- **Oracle.** In both tasks the oracle matched the value expected from independent errors, as in the feasibility study.
+- **Gradiometers.** Gradiometers alone matched the full MEG array.
+
+**Problems and observations**
+- **The lab server is switched off every evening** (around 16:25) and restarted in the morning. Long jobs must finish within the session, and results are synced to the PC before shutdown.
+- **Sub-16:** 24.4 % of trials rejected, with no bad channels detected. To be investigated: which sensor type triggers the rejections.
+- **Sub-03:** a block of 12 MEG sensors (MEG22xx) was flagged in run 6 only and reconstructed by SSS.
+- **Metric.** ROC-AUC is not comparable between switching models and single models. Balanced accuracy stays the primary metric.
+
+**Decision**
+- The results confirm the framing chosen after the feasibility study: the switch matches, but does not beat, early fusion on clean data.
+- The remaining necessary experiment is the **robustness test** (H3).
+
+**Afternoon: deep models and robustness** (`results/real_data/2026-11-14_deep_and_robustness_16_subjects.md`)
+- **EEGNet, faces vs scrambled, 16 subjects:** EEG 81.3 %, MEG 88.3 %, early fusion 89.1 %, **late fusion 91.5 %**, confidence switch 91.8 %, learned gate 90.8 %.
+  - With EEGNet the ranking of the fixed fusions is reversed compared with LDA: late fusion now beats early fusion.
+  - The switches stay level with the best scheme in both cases (LDA: early fusion; EEGNet: late fusion).
+- **Robustness (LDA), one modality corrupted on 20 % or 40 % of trials:**
+  - The learned gate beat every fixed strategy, including early fusion (+1.4 to +2.4 points, 14–15/16 subjects, Holm p ≤ 0.0003), and it re-routed trials away from the corrupted modality.
+  - **H3 is supported.**
+- **Related work 2025–2026** reviewed (`docs/07_related_work_2025-2026.md`). FUSE (2026) also finds that EEG+MEG fusion does not significantly beat the best single modality. No recent study evaluates per-trial modality selection or robustness for simultaneous EEG/MEG.
+- **Decision:** the experiments needed for the paper are complete. Writing starts next.
+

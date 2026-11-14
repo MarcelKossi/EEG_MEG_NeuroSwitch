@@ -11,8 +11,9 @@ venv/
 __pycache__/
 *.pyc
 
-# Internal working notes (not part of the public repository)
+# Internal working notes and run-by-run traceability (local only, not public)
 internal/
+traitements/
 
 # Superseded local copies (9 Nov 2026 versions)
 /eegmeg_pipeline/
