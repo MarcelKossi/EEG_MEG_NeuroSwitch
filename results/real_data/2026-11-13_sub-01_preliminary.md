@@ -1,5 +1,7 @@
 # Real data: subject 01, preliminary results (13 Nov 2026)
 
+> **Superseded** by `2026-11-14_classical_16_subjects.md` (v1.2, 16 subjects). Subject 01 recomputed with v1.2: learned gate 85.9 % (faces vs scrambled) and 57.8 % (famous vs unfamiliar).
+
 > **Correction (pipeline v1.2, 13 Nov evening):** an indexing error in the inner cross-validation of `classical_models.py` (v1.0/v1.1) made the **switch results below invalid** (confidence, learned gate, subject-level). They are struck through and will be recomputed with v1.2. The EEG, MEG, early-fusion and late-fusion results are not affected. See `code/pipeline/CHANGELOG.md`.
 
 > **One subject only. No conclusion can be drawn.** Group statistics will be computed on the 16 subjects with `aggregate.py`.

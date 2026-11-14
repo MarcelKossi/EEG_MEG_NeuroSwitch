@@ -4,7 +4,7 @@
 Supervisor: **Dr Rajat Sharma**, Head of Department, GD Goenka University  
 This repository supports a joint paper currently in preparation.
 
-_Status: active research. Last updated 13 November 2026._
+_Status: active research. Last updated 14 November 2026._
 
 ---
 
@@ -61,7 +61,23 @@ Full methods: [docs/04_methods.md](docs/04_methods.md).
 
 The oracle's apparent ~10-point headroom matched what independent errors produce by chance (90.9% observed vs 92.0% expected). See [results/feasibility_simulation](results/feasibility_simulation/SUMMARY.md).
 
-**Real data:** the preprocessing has been validated on subject 01 (879/887 trials kept). The group analysis on all 16 subjects is in progress. Preliminary single-subject numbers are in [results/real_data](results/real_data/). They are not interpreted until the full sample is available.
+**Real data** (16 subjects, classical models, within-subject cross-validation; balanced accuracy):
+
+| Model | Faces vs scrambled | Famous vs unfamiliar |
+|---|---|---|
+| EEG | 71.2 % | 53.2 % |
+| MEG | 80.5 % | 56.1 % |
+| Early fusion | 87.4 % | 57.4 % |
+| Late fusion | 82.1 % | 56.2 % |
+| Switch (learned gate) | **87.7 %** | 57.0 % |
+
+For faces vs scrambled, the learned switch beat EEG, MEG and late fusion in all 16 subjects (Holm p = 0.0001), and was level with early fusion (p = 0.50). This reproduces the feasibility study. Details: [results/real_data](results/real_data/2026-11-14_classical_16_subjects.md).
+
+**Deep experts (EEGNet, faces vs scrambled):**
+- EEG 81.3 %, MEG 88.3 %, early fusion 89.1 %, **late fusion 91.5 %**, confidence switch 91.8 %.
+- The best fixed fusion scheme depends on the classifier (early fusion with LDA, late fusion with EEGNet). The switch stays level with whichever is best.
+
+**Robustness (H3):** when EEG or MEG is corrupted on 20–40 % of trials, the learned gate beats every fixed strategy, including early fusion (+1.4 to +2.4 points, 14–15/16 subjects, Holm p ≤ 0.0003). It also moves trials away from the corrupted modality. Details: [results/real_data](results/real_data/2026-11-14_deep_and_robustness_16_subjects.md).
 
 ## Repository structure
 
