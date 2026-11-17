@@ -1,37 +1,51 @@
-# 06: Roadmap, open decisions, risks
+# 06: Roadmap, decisions, risks
 
-_Updated 13 Nov 2026 (evening)_
+_Updated 18 Nov 2026. Experiments are complete and the manuscript is in preparation._
 
-## 1. Next steps
+## 1. Experiments: status
 
-| # | Step | Where | Estimate | Status |
-|---|---|---|---|---|
-| 1 | Download sub-02 … sub-16 (~78 GB) | Server, tmux `dl` | 1–2 h | In progress (13 Nov) |
-| 2 | Deploy pipeline v1.2 on the server (`push_code_to_server.ps1`) | Lab PC | 5 min | To do (next session) |
-| 3 | Preprocess the 16 subjects (`--n-jobs 8`) | Server, CPU | ~20–30 min | Sub-01 done |
-| 3b | Classical models, 2 tasks × 16 subjects, then `aggregate.py`. Sub-01 switch results must be recomputed with v1.2. | Server, CPU | < 30 min | Sub-01 baselines done |
-| 4 | Time one full deep subject, then deep models on 16 subjects × 2 tasks | Lab GPU | 1–2 sessions (to confirm) | Smoke test OK |
-| 5 | Sync results to the PC; update `results/real_data/` and the journal | PC | 10 min | Each session |
-| 6 | **Robustness experiment:** corrupt EEG, MEG or both on 20%/40% of trials (`--corrupt`) | Server | 1 session | Code ready (v1.2) |
-| 7 | **Cross-subject experiment:** leave-one-subject-out (`cross_subject.py`) | Server, CPU | ~30 min per task | Code ready (v1.2) |
-| 8 | **Interpretability:** gate choices vs signal quality; source orientation and depth per subject (MRI available in ds000117) | Code to add | 2+ sessions | To do |
-| 9 | Second dataset (Cogitate MEG-EEG) | Server (space!) | Later | Decision needed |
-| 10 | Paper writing: Methods draft ready (`04_methods.md`) | PC | In parallel | Started |
+| # | Experiment | Status | Results |
+|---|---|---|---|
+| 1 | Feasibility simulation (head model, 16 simulated subjects) | Done (2 Nov) | `results/feasibility_simulation/` |
+| 2 | Download and preprocessing of ds000117 (16 subjects; 13,537 / 14,157 trials kept) | Done (13–14 Nov) | `results/server_sync/2026-11-14_1441/preprocessing_logs/` |
+| 3 | Classical (LDA) benchmark, 2 tasks × 16 subjects | Done (14 Nov) | `results/real_data/2026-11-14_classical_16_subjects.md` |
+| 4 | Deep (EEGNet) benchmark, faces vs scrambled × 16 subjects | Done (14 Nov) | `results/real_data/2026-11-14_deep_and_robustness_16_subjects.md` |
+| 5 | Robustness: EEG or MEG corrupted on 20 % / 40 % of trials (LDA, faces vs scrambled) | Done (14 Nov) | same report as 4 |
+| 6 | Related work 2025–2026 | Done (14 Nov) | `docs/07_related_work_2025-2026.md` |
 
-## 2. Decisions waiting for the supervisor or owner
+## 2. Out of scope for this paper (future work)
 
-1. **Main claim:** "switching beats fusion", or "robust adaptive fusion plus which modality, for whom and why"? The feasibility study supports the second.
-2. **Tasks:** keep both (faces vs scrambled, famous vs unfamiliar) or focus on one?
-3. **Second dataset:** Cogitate MEG-EEG, or a motor-imagery BCI dataset (Corsi et al.; the data may need a request to the authors)?
-4. **Server:** `/scratch` access; whether long jobs can run overnight; whether SLURM must be used.
+These were decided against to keep the experiments strictly to what the paper needs (14 Nov):
 
-## 3. Risks and mitigations
+- **Cross-subject validation** (`cross_subject.py`): the code is written but has not been run.
+- **EEGNet on famous vs unfamiliar**: all classical methods are close to chance on this task.
+- **Robustness with deep experts.**
+- **Source-level interpretability** (MRI-based orientation and depth of the generators).
+- **Second dataset** (Cogitate MEG-EEG, 2026) for generalisation.
+- **Real sensor failures** instead of synthetic corruption.
 
-| Risk | Impact | Mitigation |
+## 3. Next steps
+
+| # | Step | Status |
 |---|---|---|
-| `$WORK` files deleted after ~30 days without use | Loss of data or results | Sync to PC after every session; raw data can be re-downloaded |
-| `/var` partition fills up (shared with the system) | Server problems for everyone | Check `df -h $WORK`; no extra datasets; delete raw data after preprocessing if needed |
-| Switch does not beat early fusion on real data | Weaker headline claim | Robustness and interpretability framing (already chosen) |
-| EEG much weaker than MEG for all subjects | No switching benefit | Report honestly; the robustness test still applies; check EEG preprocessing (bad channels, reference) |
-| Limited GPU time (~4 h/day) | Slow deep experiments | Resumable scripts; classical results first; run deep jobs in tmux |
-| Code differences between PC and server | Results not reproducible | Edit only `code/pipeline/` on the PC, then `push_code_to_server.ps1`; note versions in `CHANGELOG.md` |
+| 1 | Decide the target venue and format of the paper | Waiting for supervisor |
+| 2 | Paper outline, to be validated by the supervisor | To do |
+| 3 | Figures: main accuracy figure (LDA vs EEGNet), robustness figure, gate-choice figure | To do |
+| 4 | Writing: Methods (draft exists: `docs/04_methods.md`), Results, Discussion, Introduction | To do |
+| 5 | Optional sensitivity check without sub-16 (24.4 % trials rejected), computed from the saved results, no server needed | To decide |
+
+## 4. Points to report in the paper
+
+- **Sub-16:** 24.4 % of trials rejected, with no bad channels detected.
+- **Sub-03:** 12 MEG sensors reconstructed by SSS in run 6.
+- **Metric:** ROC-AUC is not comparable between switches and single models, because a switch mixes the probability scales of different experts. Balanced accuracy is therefore the primary metric.
+- **Deep learned gate:** it is trained on a single validation run (about 145 trials), which probably explains why it falls below the confidence switch.
+- **Pipeline correction v1.2:** an indexing error in the inner cross-validation was found and corrected before the group analysis. All reported switch results use v1.2.
+
+## 5. Risks
+
+| Risk | Mitigation |
+|---|---|
+| Reviewers ask for generalisation beyond one dataset | State it as a limitation; name Cogitate as the next dataset |
+| Reviewers question synthetic corruption | Describe the corruption model precisely; propose real sensor failures as future work |
+| Raw server files deleted (`$WORK`, ~30 days) | All result files are already synced to this repository; the raw data can be re-downloaded from OpenNeuro |
