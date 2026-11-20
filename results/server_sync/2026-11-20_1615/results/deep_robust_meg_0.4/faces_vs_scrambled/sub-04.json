@@ -1,0 +1,192 @@
+{
+  "metrics": {
+    "EEG": {
+      "accuracy": 0.8625304136253041,
+      "balanced_accuracy": 0.8531021897810218,
+      "auc": 0.9212597900793861
+    },
+    "MEG": {
+      "accuracy": 0.6435523114355232,
+      "balanced_accuracy": 0.6578467153284672,
+      "auc": 0.7309259949917416
+    },
+    "Early fusion": {
+      "accuracy": 0.7566909975669099,
+      "balanced_accuracy": 0.7554744525547445,
+      "auc": 0.82711518994086
+    },
+    "Late fusion": {
+      "accuracy": 0.8637469586374696,
+      "balanced_accuracy": 0.8558394160583942,
+      "auc": 0.9270605786136714
+    },
+    "Switch: confidence": {
+      "accuracy": 0.8759124087591241,
+      "balanced_accuracy": 0.8677007299270073,
+      "auc": 0.9124553785497362
+    },
+    "Switch: learned gate": {
+      "accuracy": 0.8807785888077859,
+      "balanced_accuracy": 0.8731751824817519,
+      "auc": 0.9234975225105225
+    },
+    "Switch: subject-level": {
+      "accuracy": 0.8625304136253041,
+      "balanced_accuracy": 0.8531021897810218,
+      "auc": 0.9212597900793861
+    },
+    "Oracle EEG/MEG": {
+      "accuracy": 0.9464720194647201,
+      "balanced_accuracy": 0.947992700729927
+    },
+    "Oracle 3-way": {
+      "accuracy": 0.9683698296836983,
+      "balanced_accuracy": 0.968978102189781
+    }
+  },
+  "subject": 4,
+  "task": "faces_vs_scrambled",
+  "method": "deep-EEGNet",
+  "n_trials": 822,
+  "corruption": {
+    "target": "meg",
+    "rate": 0.4,
+    "gain": 5.0,
+    "seed": 0,
+    "eeg_trials_hit": 0,
+    "meg_trials_hit": 311
+  },
+  "class_counts": {
+    "0": 274,
+    "1": 548
+  },
+  "subject_level_choice_per_fold": [
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg"
+  ],
+  "folds": [
+    {
+      "test_run": 1,
+      "val_run": 2,
+      "eeg": {
+        "epochs": 85,
+        "best_val_loss": 0.3144
+      },
+      "meg": {
+        "epochs": 32,
+        "best_val_loss": 0.662
+      },
+      "fused": {
+        "epochs": 31,
+        "best_val_loss": 0.5555
+      }
+    },
+    {
+      "test_run": 2,
+      "val_run": 3,
+      "eeg": {
+        "epochs": 60,
+        "best_val_loss": 0.3696
+      },
+      "meg": {
+        "epochs": 39,
+        "best_val_loss": 0.6657
+      },
+      "fused": {
+        "epochs": 34,
+        "best_val_loss": 0.5651
+      }
+    },
+    {
+      "test_run": 3,
+      "val_run": 4,
+      "eeg": {
+        "epochs": 128,
+        "best_val_loss": 0.1366
+      },
+      "meg": {
+        "epochs": 37,
+        "best_val_loss": 0.5523
+      },
+      "fused": {
+        "epochs": 58,
+        "best_val_loss": 0.3824
+      }
+    },
+    {
+      "test_run": 4,
+      "val_run": 5,
+      "eeg": {
+        "epochs": 95,
+        "best_val_loss": 0.2461
+      },
+      "meg": {
+        "epochs": 38,
+        "best_val_loss": 0.6211
+      },
+      "fused": {
+        "epochs": 39,
+        "best_val_loss": 0.4699
+      }
+    },
+    {
+      "test_run": 5,
+      "val_run": 6,
+      "eeg": {
+        "epochs": 61,
+        "best_val_loss": 0.4769
+      },
+      "meg": {
+        "epochs": 26,
+        "best_val_loss": 0.6918
+      },
+      "fused": {
+        "epochs": 32,
+        "best_val_loss": 0.6431
+      }
+    },
+    {
+      "test_run": 6,
+      "val_run": 1,
+      "eeg": {
+        "epochs": 83,
+        "best_val_loss": 0.2315
+      },
+      "meg": {
+        "epochs": 53,
+        "best_val_loss": 0.5404
+      },
+      "fused": {
+        "epochs": 39,
+        "best_val_loss": 0.3809
+      }
+    }
+  ],
+  "hyperparameters": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 25,
+    "dropout": 0.5,
+    "seed": 42
+  },
+  "minutes": 11.97,
+  "only_eeg_correct": 0.3029197080291971,
+  "only_meg_correct": 0.08394160583941605,
+  "both_wrong": 0.0535279805352798,
+  "gate_confidence_share": {
+    "eeg": 0.7092,
+    "meg": 0.1277,
+    "fused": 0.163
+  },
+  "gate_learned_share": {
+    "eeg": 0.764,
+    "meg": 0.056,
+    "fused": 0.18
+  }
+}

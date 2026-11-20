@@ -1,0 +1,9 @@
+GPU: NVIDIA L40S  (CUDA_VISIBLE_DEVICES=0)
+1 subjects, task faces_vs_scrambled, torch 2.14.1+cu126
+sub-01 faces_vs_scrambled fold run-1: EEG 0.829 MEG 0.863 fused 0.870 late 0.932 gate 0.952 | epochs [66, 58, 45] | 0.6 min
+sub-01 faces_vs_scrambled fold run-2: EEG 0.856 MEG 0.856 fused 0.904 late 0.932 gate 0.938 | epochs [56, 39, 47] | 1.0 min
+sub-01 faces_vs_scrambled fold run-3: EEG 0.779 MEG 0.866 fused 0.846 late 0.893 gate 0.886 | epochs [64, 98, 49] | 1.7 min
+sub-01 faces_vs_scrambled fold run-4: EEG 0.848 MEG 0.890 fused 0.897 late 0.945 gate 0.910 | epochs [48, 57, 41] | 2.2 min
+sub-01 faces_vs_scrambled fold run-5: EEG 0.747 MEG 0.890 fused 0.870 late 0.925 gate 0.911 | epochs [67, 53, 34] | 2.6 min
+sub-01 faces_vs_scrambled fold run-6: EEG 0.789 MEG 0.878 fused 0.891 late 0.912 gate 0.898 | epochs [62, 39, 38] | 3.0 min
+sub-01 faces_vs_scrambled DONE balanced acc: EEG 0.804, MEG 0.868, Early fusion 0.880, Late fusion 0.915, Switch: learned gate 0.912

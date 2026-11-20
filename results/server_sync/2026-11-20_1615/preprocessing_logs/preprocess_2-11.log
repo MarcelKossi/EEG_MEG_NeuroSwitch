@@ -1,0 +1,183 @@
+12:47:48 MNE 1.13.2; subjects [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; n_jobs 8
+12:47:49 [sub-04] run 1: reading sub-04_ses-meg_task-facerecognition_run-01_meg.fif
+12:47:49 [sub-03] run 1: reading sub-03_ses-meg_task-facerecognition_run-01_meg.fif
+12:47:49 [sub-02] run 1: reading sub-02_ses-meg_task-facerecognition_run-01_meg.fif
+12:47:49 [sub-06] run 1: reading sub-06_ses-meg_task-facerecognition_run-01_meg.fif
+12:47:49 [sub-07] run 1: reading sub-07_ses-meg_task-facerecognition_run-01_meg.fif
+12:47:49 [sub-05] run 1: reading sub-05_ses-meg_task-facerecognition_run-01_meg.fif
+12:47:49 [sub-09] run 1: reading sub-09_ses-meg_task-facerecognition_run-01_meg.fif
+12:47:49 [sub-08] run 1: reading sub-08_ses-meg_task-facerecognition_run-01_meg.fif
+12:48:45 [sub-07] run 1: 148 stimuli, MEG bads [], EEG bads []
+12:48:45 [sub-07] run 2: reading sub-07_ses-meg_task-facerecognition_run-02_meg.fif
+12:48:50 [sub-06] run 1: 146 stimuli, MEG bads [], EEG bads []
+12:48:50 [sub-06] run 2: reading sub-06_ses-meg_task-facerecognition_run-02_meg.fif
+12:48:50 [sub-03] run 1: 148 stimuli, MEG bads [], EEG bads []
+12:48:50 [sub-03] run 2: reading sub-03_ses-meg_task-facerecognition_run-02_meg.fif
+12:48:52 [sub-05] run 1: 147 stimuli, MEG bads [], EEG bads []
+12:48:52 [sub-05] run 2: reading sub-05_ses-meg_task-facerecognition_run-02_meg.fif
+12:48:57 [sub-04] run 1: 146 stimuli, MEG bads ['MEG0642', 'MEG0933', 'MEG1611'], EEG bads []
+12:48:57 [sub-04] run 2: reading sub-04_ses-meg_task-facerecognition_run-02_meg.fif
+12:49:00 [sub-08] run 1: 148 stimuli, MEG bads ['MEG0933', 'MEG1611'], EEG bads []
+12:49:00 [sub-08] run 2: reading sub-08_ses-meg_task-facerecognition_run-02_meg.fif
+12:49:00 [sub-09] run 1: 147 stimuli, MEG bads ['MEG1611'], EEG bads []
+12:49:00 [sub-09] run 2: reading sub-09_ses-meg_task-facerecognition_run-02_meg.fif
+12:49:05 [sub-02] run 1: 147 stimuli, MEG bads ['MEG2113'], EEG bads []
+12:49:05 [sub-02] run 2: reading sub-02_ses-meg_task-facerecognition_run-02_meg.fif
+12:49:40 [sub-07] run 2: 148 stimuli, MEG bads [], EEG bads []
+12:49:40 [sub-07] run 3: reading sub-07_ses-meg_task-facerecognition_run-03_meg.fif
+12:49:45 [sub-03] run 2: 148 stimuli, MEG bads [], EEG bads []
+12:49:45 [sub-03] run 3: reading sub-03_ses-meg_task-facerecognition_run-03_meg.fif
+12:49:51 [sub-04] run 2: 146 stimuli, MEG bads [], EEG bads []
+12:49:51 [sub-04] run 3: reading sub-04_ses-meg_task-facerecognition_run-03_meg.fif
+12:49:51 [sub-06] run 2: 146 stimuli, MEG bads [], EEG bads []
+12:49:51 [sub-06] run 3: reading sub-06_ses-meg_task-facerecognition_run-03_meg.fif
+12:49:54 [sub-05] run 2: 148 stimuli, MEG bads ['MEG2242'], EEG bads []
+12:49:54 [sub-05] run 3: reading sub-05_ses-meg_task-facerecognition_run-03_meg.fif
+12:50:14 [sub-08] run 2: 148 stimuli, MEG bads ['MEG0933'], EEG bads ['EEG002']
+12:50:14 [sub-08] run 3: reading sub-08_ses-meg_task-facerecognition_run-03_meg.fif
+12:50:16 [sub-09] run 2: 148 stimuli, MEG bads ['MEG1611', 'MEG2523'], EEG bads []
+12:50:16 [sub-09] run 3: reading sub-09_ses-meg_task-facerecognition_run-03_meg.fif
+12:50:21 [sub-02] run 2: 147 stimuli, MEG bads ['MEG2113'], EEG bads []
+12:50:21 [sub-02] run 3: reading sub-02_ses-meg_task-facerecognition_run-03_meg.fif
+12:50:36 [sub-07] run 3: 148 stimuli, MEG bads [], EEG bads []
+12:50:36 [sub-07] run 4: reading sub-07_ses-meg_task-facerecognition_run-04_meg.fif
+12:50:40 [sub-03] run 3: 147 stimuli, MEG bads [], EEG bads []
+12:50:40 [sub-03] run 4: reading sub-03_ses-meg_task-facerecognition_run-04_meg.fif
+12:50:49 [sub-04] run 3: 149 stimuli, MEG bads [], EEG bads []
+12:50:49 [sub-04] run 4: reading sub-04_ses-meg_task-facerecognition_run-04_meg.fif
+12:50:53 [sub-06] run 3: 149 stimuli, MEG bads [], EEG bads []
+12:50:53 [sub-06] run 4: reading sub-06_ses-meg_task-facerecognition_run-04_meg.fif
+12:50:55 [sub-05] run 3: 147 stimuli, MEG bads [], EEG bads []
+12:50:55 [sub-05] run 4: reading sub-05_ses-meg_task-facerecognition_run-04_meg.fif
+12:51:20 [sub-09] run 3: 149 stimuli, MEG bads [], EEG bads []
+12:51:20 [sub-09] run 4: reading sub-09_ses-meg_task-facerecognition_run-04_meg.fif
+12:51:29 [sub-02] run 3: 146 stimuli, MEG bads ['MEG2113'], EEG bads []
+12:51:29 [sub-02] run 4: reading sub-02_ses-meg_task-facerecognition_run-04_meg.fif
+12:51:32 [sub-03] run 4: 149 stimuli, MEG bads [], EEG bads []
+12:51:32 [sub-03] run 5: reading sub-03_ses-meg_task-facerecognition_run-05_meg.fif
+12:51:34 [sub-08] run 3: 149 stimuli, MEG bads ['MEG0933'], EEG bads ['EEG004']
+12:51:34 [sub-08] run 4: reading sub-08_ses-meg_task-facerecognition_run-04_meg.fif
+12:51:36 [sub-07] run 4: 146 stimuli, MEG bads ['MEG0721', 'MEG0722', 'MEG0723'], EEG bads []
+12:51:36 [sub-07] run 5: reading sub-07_ses-meg_task-facerecognition_run-05_meg.fif
+12:51:46 [sub-04] run 4: 148 stimuli, MEG bads [], EEG bads []
+12:51:46 [sub-04] run 5: reading sub-04_ses-meg_task-facerecognition_run-05_meg.fif
+12:51:56 [sub-06] run 4: 148 stimuli, MEG bads [], EEG bads []
+12:51:56 [sub-06] run 5: reading sub-06_ses-meg_task-facerecognition_run-05_meg.fif
+12:51:56 [sub-05] run 4: 146 stimuli, MEG bads [], EEG bads []
+12:51:56 [sub-05] run 5: reading sub-05_ses-meg_task-facerecognition_run-05_meg.fif
+12:52:22 [sub-09] run 4: 147 stimuli, MEG bads [], EEG bads []
+12:52:22 [sub-09] run 5: reading sub-09_ses-meg_task-facerecognition_run-05_meg.fif
+12:52:25 [sub-03] run 5: 148 stimuli, MEG bads [], EEG bads []
+12:52:25 [sub-03] run 6: reading sub-03_ses-meg_task-facerecognition_run-06_meg.fif
+12:52:34 [sub-08] run 4: 148 stimuli, MEG bads [], EEG bads []
+12:52:34 [sub-08] run 5: reading sub-08_ses-meg_task-facerecognition_run-05_meg.fif
+12:52:35 [sub-07] run 5: 145 stimuli, MEG bads [], EEG bads []
+12:52:35 [sub-07] run 6: reading sub-07_ses-meg_task-facerecognition_run-06_meg.fif
+12:52:42 [sub-02] run 4: 147 stimuli, MEG bads ['MEG2113'], EEG bads []
+12:52:42 [sub-02] run 5: reading sub-02_ses-meg_task-facerecognition_run-05_meg.fif
+12:52:50 [sub-04] run 5: 148 stimuli, MEG bads [], EEG bads []
+12:52:50 [sub-04] run 6: reading sub-04_ses-meg_task-facerecognition_run-06_meg.fif
+12:52:57 [sub-05] run 5: 148 stimuli, MEG bads [], EEG bads ['EEG004', 'EEG008']
+12:52:57 [sub-05] run 6: reading sub-05_ses-meg_task-facerecognition_run-06_meg.fif
+12:53:00 [sub-06] run 5: 148 stimuli, MEG bads [], EEG bads []
+12:53:00 [sub-06] run 6: reading sub-06_ses-meg_task-facerecognition_run-06_meg.fif
+12:53:17 [sub-03] run 6: 149 stimuli, MEG bads ['MEG2211', 'MEG2212', 'MEG2213', 'MEG2221', 'MEG2222', 'MEG2223', 'MEG2231', 'MEG2232', 'MEG2233', 'MEG2241', 'MEG2242', 'MEG2243'], EEG bads []
+12:53:33 [sub-09] run 5: 147 stimuli, MEG bads ['MEG2522', 'MEG2523'], EEG bads []
+12:53:33 [sub-09] run 6: reading sub-09_ses-meg_task-facerecognition_run-06_meg.fif
+12:53:34 [sub-07] run 6: 147 stimuli, MEG bads ['MEG0721', 'MEG0722'], EEG bads []
+12:53:38 [sub-08] run 5: 149 stimuli, MEG bads [], EEG bads []
+12:53:38 [sub-08] run 6: reading sub-08_ses-meg_task-facerecognition_run-06_meg.fif
+12:53:53 [sub-04] run 6: 147 stimuli, MEG bads [], EEG bads []
+12:54:01 [sub-02] run 5: 148 stimuli, MEG bads ['MEG2113'], EEG bads []
+12:54:01 [sub-02] run 6: reading sub-02_ses-meg_task-facerecognition_run-06_meg.fif
+12:54:01 [sub-05] run 6: 147 stimuli, MEG bads [], EEG bads ['EEG002', 'EEG004', 'EEG007', 'EEG008']
+12:54:07 [sub-06] run 6: 148 stimuli, MEG bads [], EEG bads []
+12:54:09 [sub-03] ICA meg: 40 comps, removed [7, 10, 14]
+12:54:35 [sub-09] run 6: 147 stimuli, MEG bads [], EEG bads []
+12:54:37 [sub-07] ICA meg: 40 comps, removed [9, 10, 34]
+12:54:44 [sub-08] run 6: 147 stimuli, MEG bads [], EEG bads []
+12:54:46 [sub-03] ICA eeg: 30 comps, removed [0, 4, 7]
+/var/tmp/thammi_reddy/eegmeg/eegmeg_pipeline/preprocess.py:282: RuntimeWarning: Concatenation of Annotations within Epochs is not supported yet. All annotations will be dropped.
+  epochs = mne.concatenate_epochs(epochs_list, on_mismatch="warn", verbose=False)
+12:54:49 [sub-03] done: 879/889 trials kept {'famous': 297, 'unfamiliar': 292, 'scrambled': 290}, channels {'eeg': 70, 'mag': 102, 'grad': 204}, 7.0 min
+12:54:49 [sub-10] run 1: reading sub-10_ses-meg_task-facerecognition_run-01_meg.fif
+12:54:50 [sub-04] ICA meg: 40 comps, removed [10, 30, 38]
+12:55:05 [sub-07] ICA eeg: 30 comps, removed [0, 4, 6]
+/var/tmp/thammi_reddy/eegmeg/eegmeg_pipeline/preprocess.py:282: RuntimeWarning: Concatenation of Annotations within Epochs is not supported yet. All annotations will be dropped.
+  epochs = mne.concatenate_epochs(epochs_list, on_mismatch="warn", verbose=False)
+12:55:07 [sub-06] ICA meg: 40 comps, removed [28, 33]
+12:55:08 [sub-07] done: 868/882 trials kept {'famous': 293, 'unfamiliar': 291, 'scrambled': 284}, channels {'eeg': 70, 'mag': 102, 'grad': 204}, 7.3 min
+12:55:08 [sub-11] run 1: reading sub-11_ses-meg_task-facerecognition_run-01_meg.fif
+12:55:12 [sub-05] ICA meg: 40 comps, removed [7, 13, 19, 21]
+12:55:16 [sub-04] ICA eeg: 30 comps, removed [0, 7]
+/var/tmp/thammi_reddy/eegmeg/eegmeg_pipeline/preprocess.py:282: RuntimeWarning: Concatenation of Annotations within Epochs is not supported yet. All annotations will be dropped.
+  epochs = mne.concatenate_epochs(epochs_list, on_mismatch="warn", verbose=False)
+12:55:18 [sub-04] done: 822/884 trials kept {'unfamiliar': 275, 'scrambled': 274, 'famous': 273}, channels {'eeg': 70, 'mag': 102, 'grad': 204}, 7.5 min
+12:55:19 [sub-02] run 6: 147 stimuli, MEG bads ['MEG2113'], EEG bads []
+12:55:33 [sub-06] ICA eeg: 30 comps, removed [1, 15]
+/var/tmp/thammi_reddy/eegmeg/eegmeg_pipeline/preprocess.py:282: RuntimeWarning: Concatenation of Annotations within Epochs is not supported yet. All annotations will be dropped.
+  epochs = mne.concatenate_epochs(epochs_list, on_mismatch="warn", verbose=False)
+12:55:36 [sub-06] done: 867/885 trials kept {'scrambled': 290, 'unfamiliar': 289, 'famous': 288}, channels {'eeg': 70, 'mag': 102, 'grad': 204}, 7.8 min
+12:55:38 [sub-09] ICA meg: 40 comps, removed [3, 6, 14, 17, 31, 34]
+12:55:43 [sub-05] ICA eeg: 30 comps, removed [0, 1]
+12:55:43 [sub-08] ICA meg: 40 comps, removed [1, 8, 13, 22, 27, 38]
+/var/tmp/thammi_reddy/eegmeg/eegmeg_pipeline/preprocess.py:282: RuntimeWarning: Concatenation of Annotations within Epochs is not supported yet. All annotations will be dropped.
+  epochs = mne.concatenate_epochs(epochs_list, on_mismatch="warn", verbose=False)
+12:55:45 [sub-05] done: 875/883 trials kept {'unfamiliar': 293, 'famous': 292, 'scrambled': 290}, channels {'eeg': 70, 'mag': 102, 'grad': 204}, 7.9 min
+12:55:54 [sub-10] run 1: 148 stimuli, MEG bads ['MEG0233'], EEG bads []
+12:55:54 [sub-10] run 2: reading sub-10_ses-meg_task-facerecognition_run-02_meg.fif
+12:56:01 [sub-11] run 1: 147 stimuli, MEG bads [], EEG bads ['EEG010']
+12:56:01 [sub-11] run 2: reading sub-11_ses-meg_task-facerecognition_run-02_meg.fif
+12:56:06 [sub-09] ICA eeg: 30 comps, removed [8, 16]
+12:56:07 [sub-08] ICA eeg: 30 comps, removed [0, 1, 15]
+/var/tmp/thammi_reddy/eegmeg/eegmeg_pipeline/preprocess.py:282: RuntimeWarning: Concatenation of Annotations within Epochs is not supported yet. All annotations will be dropped.
+  epochs = mne.concatenate_epochs(epochs_list, on_mismatch="warn", verbose=False)
+/var/tmp/thammi_reddy/eegmeg/eegmeg_pipeline/preprocess.py:282: RuntimeWarning: Concatenation of Annotations within Epochs is not supported yet. All annotations will be dropped.
+  epochs = mne.concatenate_epochs(epochs_list, on_mismatch="warn", verbose=False)
+12:56:08 [sub-09] done: 806/885 trials kept {'scrambled': 278, 'famous': 265, 'unfamiliar': 263}, channels {'eeg': 70, 'mag': 102, 'grad': 204}, 8.3 min
+12:56:09 [sub-02] ICA meg: 40 comps, removed [4, 7]
+12:56:09 [sub-08] done: 861/889 trials kept {'scrambled': 291, 'unfamiliar': 286, 'famous': 284}, channels {'eeg': 70, 'mag': 102, 'grad': 204}, 8.3 min
+12:56:32 [sub-02] ICA eeg: 30 comps, removed [0, 4, 9]
+/var/tmp/thammi_reddy/eegmeg/eegmeg_pipeline/preprocess.py:282: RuntimeWarning: Concatenation of Annotations within Epochs is not supported yet. All annotations will be dropped.
+  epochs = mne.concatenate_epochs(epochs_list, on_mismatch="warn", verbose=False)
+12:56:34 [sub-02] done: 850/882 trials kept {'famous': 285, 'unfamiliar': 283, 'scrambled': 282}, channels {'eeg': 70, 'mag': 102, 'grad': 204}, 8.8 min
+12:56:52 [sub-10] run 2: 148 stimuli, MEG bads [], EEG bads []
+12:56:52 [sub-10] run 3: reading sub-10_ses-meg_task-facerecognition_run-03_meg.fif
+12:56:55 [sub-11] run 2: 148 stimuli, MEG bads [], EEG bads []
+12:56:55 [sub-11] run 3: reading sub-11_ses-meg_task-facerecognition_run-03_meg.fif
+12:57:46 [sub-11] run 3: 148 stimuli, MEG bads [], EEG bads []
+12:57:46 [sub-11] run 4: reading sub-11_ses-meg_task-facerecognition_run-04_meg.fif
+12:57:51 [sub-10] run 3: 149 stimuli, MEG bads [], EEG bads []
+12:57:51 [sub-10] run 4: reading sub-10_ses-meg_task-facerecognition_run-04_meg.fif
+12:58:52 [sub-11] run 4: 147 stimuli, MEG bads ['MEG2541'], EEG bads []
+12:58:52 [sub-11] run 5: reading sub-11_ses-meg_task-facerecognition_run-05_meg.fif
+12:58:53 [sub-10] run 4: 148 stimuli, MEG bads [], EEG bads []
+12:58:53 [sub-10] run 5: reading sub-10_ses-meg_task-facerecognition_run-05_meg.fif
+12:59:56 [sub-11] run 5: 146 stimuli, MEG bads ['MEG2541'], EEG bads []
+12:59:56 [sub-11] run 6: reading sub-11_ses-meg_task-facerecognition_run-06_meg.fif
+12:59:58 [sub-10] run 5: 147 stimuli, MEG bads [], EEG bads []
+12:59:58 [sub-10] run 6: reading sub-10_ses-meg_task-facerecognition_run-06_meg.fif
+13:00:48 [sub-10] run 6: 148 stimuli, MEG bads [], EEG bads []
+13:00:58 [sub-11] run 6: 147 stimuli, MEG bads [], EEG bads []
+13:01:42 [sub-10] ICA meg: 40 comps, removed [6, 8, 28]
+13:02:06 [sub-11] ICA meg: 40 comps, removed [8, 25, 33]
+13:02:08 [sub-10] ICA eeg: 30 comps, removed [0, 1, 8, 11, 16]
+/var/tmp/thammi_reddy/eegmeg/eegmeg_pipeline/preprocess.py:282: RuntimeWarning: Concatenation of Annotations within Epochs is not supported yet. All annotations will be dropped.
+  epochs = mne.concatenate_epochs(epochs_list, on_mismatch="warn", verbose=False)
+13:02:10 [sub-10] done: 875/888 trials kept {'famous': 293, 'unfamiliar': 291, 'scrambled': 291}, channels {'eeg': 70, 'mag': 102, 'grad': 204}, 7.4 min
+13:02:28 [sub-11] ICA eeg: 30 comps, removed [0, 8]
+/var/tmp/thammi_reddy/eegmeg/eegmeg_pipeline/preprocess.py:282: RuntimeWarning: Concatenation of Annotations within Epochs is not supported yet. All annotations will be dropped.
+  epochs = mne.concatenate_epochs(epochs_list, on_mismatch="warn", verbose=False)
+13:02:30 [sub-11] done: 873/883 trials kept {'scrambled': 294, 'unfamiliar': 290, 'famous': 289}, channels {'eeg': 70, 'mag': 102, 'grad': 204}, 7.4 min
+
+SUMMARY
+{'subject': 2, 'status': 'ok', 'kept': 850, 'total': 882}
+{'subject': 3, 'status': 'ok', 'kept': 879, 'total': 889}
+{'subject': 4, 'status': 'ok', 'kept': 822, 'total': 884}
+{'subject': 5, 'status': 'ok', 'kept': 875, 'total': 883}
+{'subject': 6, 'status': 'ok', 'kept': 867, 'total': 885}
+{'subject': 7, 'status': 'ok', 'kept': 868, 'total': 882}
+{'subject': 8, 'status': 'ok', 'kept': 861, 'total': 889}
+{'subject': 9, 'status': 'ok', 'kept': 806, 'total': 885}
+{'subject': 10, 'status': 'ok', 'kept': 875, 'total': 888}
+{'subject': 11, 'status': 'ok', 'kept': 873, 'total': 883}

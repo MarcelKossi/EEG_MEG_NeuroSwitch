@@ -1,0 +1,108 @@
+{
+  "subject": 4,
+  "runs": [
+    {
+      "run": 1,
+      "n_stim_events": 146,
+      "meg_bads_sss": [
+        "MEG0642",
+        "MEG0933",
+        "MEG1611"
+      ],
+      "eeg_bads_detected": []
+    },
+    {
+      "run": 2,
+      "n_stim_events": 146,
+      "meg_bads_sss": [],
+      "eeg_bads_detected": []
+    },
+    {
+      "run": 3,
+      "n_stim_events": 149,
+      "meg_bads_sss": [],
+      "eeg_bads_detected": []
+    },
+    {
+      "run": 4,
+      "n_stim_events": 148,
+      "meg_bads_sss": [],
+      "eeg_bads_detected": []
+    },
+    {
+      "run": 5,
+      "n_stim_events": 148,
+      "meg_bads_sss": [],
+      "eeg_bads_detected": []
+    },
+    {
+      "run": 6,
+      "n_stim_events": 147,
+      "meg_bads_sss": [],
+      "eeg_bads_detected": []
+    }
+  ],
+  "calibration": "/var/tmp/thammi_reddy/eegmeg/data/ds000117/sub-04/ses-meg/meg/sub-04_ses-meg_acq-calibration_meg.dat",
+  "crosstalk": "/var/tmp/thammi_reddy/eegmeg/data/ds000117/sub-04/ses-meg/meg/sub-04_ses-meg_acq-crosstalk_meg.fif",
+  "params": {
+    "l_freq": 0.1,
+    "h_freq": 40.0,
+    "sfreq": 200.0,
+    "tmin": -0.2,
+    "tmax": 0.8,
+    "reject": {
+      "grad": 4e-10,
+      "mag": 4e-12,
+      "eeg": 0.00015
+    },
+    "ica_n_meg": 40,
+    "ica_n_eeg": 30,
+    "ica_max_remove": 4,
+    "seed": 97,
+    "eeg_bad_z": 5.0
+  },
+  "crop_s": null,
+  "eeg_bads_interpolated": [],
+  "ica_meg": {
+    "n_components": 40,
+    "eog": [
+      10
+    ],
+    "ecg": [
+      30,
+      38
+    ],
+    "excluded": [
+      10,
+      30,
+      38
+    ]
+  },
+  "ica_eeg": {
+    "n_components": 30,
+    "eog": [
+      0,
+      7
+    ],
+    "ecg": [],
+    "excluded": [
+      0,
+      7
+    ]
+  },
+  "n_trials_before": 884,
+  "n_trials_after": 822,
+  "drop_rate": 0.0701,
+  "condition_counts": {
+    "unfamiliar": 275,
+    "scrambled": 274,
+    "famous": 273
+  },
+  "n_channels": {
+    "eeg": 70,
+    "mag": 102,
+    "grad": 204
+  },
+  "minutes": 7.5,
+  "status": "ok"
+}
