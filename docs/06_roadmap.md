@@ -1,6 +1,6 @@
 # 06: Roadmap, decisions, risks
 
-_Updated 18 Nov 2026. Experiments are complete and the manuscript is in preparation._
+_Updated 24 Nov 2026. One experiment is being completed (EEGNet robustness, 5 EEG subjects left); the manuscript is in preparation._
 
 ## 1. Experiments: status
 
@@ -12,14 +12,15 @@ _Updated 18 Nov 2026. Experiments are complete and the manuscript is in preparat
 | 4 | Deep (EEGNet) benchmark, faces vs scrambled × 16 subjects | Done (14 Nov) | `results/real_data/2026-11-14_deep_and_robustness_16_subjects.md` |
 | 5 | Robustness: EEG or MEG corrupted on 20 % / 40 % of trials (LDA, faces vs scrambled) | Done (14 Nov) | same report as 4 |
 | 6 | Related work 2025–2026 | Done (14 Nov) | `docs/07_related_work_2025-2026.md` |
+| 7 | Offline checks: all comparisons without sub-16; above-chance test for famous vs unfamiliar | Done (18 Nov) | `results/real_data/2026-11-18_offline_checks.md` |
+| 8 | Robustness with EEGNet experts: EEG or MEG corrupted on 40 % of trials, faces vs scrambled | In progress (20 and 23 Nov): MEG 16/16, EEG 11/16 subjects | `results/server_sync/2026-11-23_1621/` (raw files; report after completion) |
 
 ## 2. Out of scope for this paper (future work)
 
 These were decided against to keep the experiments strictly to what the paper needs (14 Nov):
 
 - **Cross-subject validation** (`cross_subject.py`): the code is written but has not been run.
-- **EEGNet on famous vs unfamiliar**: all classical methods are close to chance on this task.
-- **Robustness with deep experts.**
+- **EEGNet on famous vs unfamiliar**: on this task all classical methods are above chance, but only by 3–7 points.
 - **Source-level interpretability** (MRI-based orientation and depth of the generators).
 - **Second dataset** (Cogitate MEG-EEG, 2026) for generalisation.
 - **Real sensor failures** instead of synthetic corruption.
@@ -28,11 +29,13 @@ These were decided against to keep the experiments strictly to what the paper ne
 
 | # | Step | Status |
 |---|---|---|
-| 1 | Decide the target venue and format of the paper | Waiting for supervisor |
+| 1 | Decide the target venue and format of the paper | After the literature review |
 | 2 | Paper outline, to be validated by the supervisor | To do |
 | 3 | Figures: main accuracy figure (LDA vs EEGNet), robustness figure, gate-choice figure | To do |
-| 4 | Writing: Methods (draft exists: `docs/04_methods.md`), Results, Discussion, Introduction | To do |
-| 5 | Optional sensitivity check without sub-16 (24.4 % trials rejected), computed from the saved results, no server needed | To decide |
+| 4 | Writing: Methods (full draft: `docs/04_methods.md`, 18 Nov), Results, Discussion, Introduction | Methods drafted |
+| 5 | Sensitivity check without sub-16 | Done (18 Nov): no conclusion changes |
+| 6 | Deep literature review: candidate list under review, then `docs/08_literature_review.md` | In progress |
+| 7 | Name of the method ("NeuroSwitch" proposed; the name is already used by commercial products outside research) | To decide |
 
 ## 4. Points to report in the paper
 

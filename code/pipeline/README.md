@@ -7,6 +7,7 @@
 | `deep_models.py` | EEGNet: same comparison with deep experts | GPU (or `--device cpu`, slower) |
 | `cross_subject.py` | Leave-one-subject-out version of the classical comparison | CPU |
 | `aggregate.py` | Group table, Wilcoxon tests, chance-level oracle, gate choices → Markdown | CPU |
+| `offline_checks.py` | Checks computed from saved results only: repeat the group tests without some subjects (`--exclude`), and test whether each model is above chance | CPU, seconds |
 | `common.py` | Shared rules: folds, gates, late fusion, oracle, corruption, metrics (used by all model scripts) | — |
 
 Data: OpenNeuro **ds000117 v2.0.0**, 16 subjects, 6 runs each, about 885 trials per subject.

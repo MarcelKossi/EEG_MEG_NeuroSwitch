@@ -160,3 +160,35 @@ Entries are chronological. Each one records what was done, problems and how they
 - **Related work 2025–2026** reviewed (`docs/07_related_work_2025-2026.md`). FUSE (2026) also finds that EEG+MEG fusion does not significantly beat the best single modality. No recent study evaluates per-trial modality selection or robustness for simultaneous EEG/MEG.
 - **Decision:** the experiments needed for the paper are complete. Writing starts next.
 
+---
+
+## 18 Nov 2026: Supervisor feedback; offline checks; Methods; literature search
+
+**Supervisor feedback**
+- The README was out of date and gave the impression that the results were not conclusive. It was rewritten as an explanatory overview of the project and its results.
+- The supervisor asked for a deep literature review and for the methodology to be written before the paper draft.
+
+**Offline checks** (`code/pipeline/offline_checks.py`, computed from the result files of 14 Nov; `results/real_data/2026-11-18_offline_checks.md`)
+- **Without sub-16** (24.4 % of trials rejected), every conclusion holds on 15 subjects:
+  - learned gate level with early fusion on clean data (+0.3, 8/15, p = 0.64);
+  - learned gate better than early fusion in the four corrupted conditions (+1.3 to +2.5, 13–14/15, Holm p ≤ 0.0006);
+  - with EEGNet, learned gate +1.8 over early fusion and −0.7 below late fusion, as with 16 subjects.
+- **Famous vs unfamiliar:** every LDA model is above chance across subjects (one-sided Wilcoxon against 50 %, Holm p ≤ 0.003). EEG is the weakest (53.2 %, 12/16 subjects above 50 %).
+
+**Methods**
+- `docs/04_methods.md` was turned into a full Materials and Methods section:
+  - overview diagram;
+  - EEGNet architecture;
+  - training data of the switches;
+  - corruption model;
+  - statistics, including the sensitivity and above-chance analyses.
+
+**Literature**
+- PubMed and bioRxiv were searched for the review.
+- 78 candidate articles, with verified references, were listed for reading (local working file).
+- No study was found that selects between EEG and MEG trial by trial.
+
+**Decisions**
+- Position to present to the supervisor (not yet confirmed): no second dataset in this paper. The claims are paired, within-dataset comparisons replicated across 16 participants, two decoding problems, two classifiers and several corruption levels; generalisation to other data is stated as a limitation and future work.
+- The EEGNet robustness experiment (EEG or MEG corrupted on 40 % of trials) will be run on 19 Nov, so that H3 is tested with both types of expert.
+- The name of the method is pending: "NeuroSwitch" is free in the research literature, but it is already used by commercial products.

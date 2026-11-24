@@ -50,7 +50,7 @@ The switch is compared with the two classic recipes:
 5. **Benchmark with a deep decoder** (EEGNet) on faces vs scrambled, to see whether the conclusions depend on the type of classifier.
 6. **Robustness test.** One modality (EEG or MEG) was deliberately corrupted on 20 % or 40 % of the trials, to see which strategy copes with a degraded signal.
 
-Every comparison is paired, using the same trials, folds and participants, and is tested across the 16 participants. The switch is always trained without access to the test data.
+Every comparison is paired, using the same trials, folds and participants, and is tested across the 16 participants. The switch is always trained without access to the test data. The conclusions are unchanged when the participant with the most rejected trials is left out.
 
 ## What we found
 
@@ -86,7 +86,7 @@ The learned switch beats early fusion in all four corrupted conditions, in 14–
 
 **4. There is no hidden "perfect switch" on clean data.** EEG and MEG often make mistakes on different trials. That leaves room, in theory, for a perfect switch that would always pick the right expert. But the size of that room is what chance alone would produce, so the errors cannot be predicted from the signals. This explains why no switch can do much better than the best fusion on clean data.
 
-**5. Subtle distinctions remain hard.** Famous vs unfamiliar faces is decoded only slightly above chance (53–57 %) by every method.
+**5. Subtle distinctions remain hard.** Every method decodes famous vs unfamiliar faces above chance across participants, but only by a small margin (53–57 %).
 
 ### Hypotheses: outcome
 

@@ -2,6 +2,8 @@
 
 ## v1.2: 13 Nov 2026 (current)
 
+**Addition, 18 Nov 2026:** `offline_checks.py` (sensitivity analysis with excluded subjects, and above-chance test). It reads the saved result files only, so the models and their results are unchanged.
+
 **Correction** (`classical_models.py`)
 - In the inner leave-one-run-out loop that produces the held-out predictions for the switch gates, features were indexed with positions relative to the training subset while the label vector was the training subset. Features and labels therefore did not correspond.
 - Fixed: `fit_predict(feats[m][tr], y[tr], itr, ite)`.
