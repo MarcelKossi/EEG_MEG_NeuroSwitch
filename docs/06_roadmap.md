@@ -1,6 +1,6 @@
 # 06: Roadmap, decisions, risks
 
-_Updated 24 Nov 2026. One experiment is being completed (EEGNet robustness, 5 EEG subjects left); the manuscript is in preparation._
+_Updated 25 Nov 2026. One experiment is being completed (EEGNet robustness, 3 EEG subjects left); the manuscript is in preparation._
 
 ## 1. Experiments: status
 
@@ -13,7 +13,7 @@ _Updated 24 Nov 2026. One experiment is being completed (EEGNet robustness, 5 EE
 | 5 | Robustness: EEG or MEG corrupted on 20 % / 40 % of trials (LDA, faces vs scrambled) | Done (14 Nov) | same report as 4 |
 | 6 | Related work 2025–2026 | Done (14 Nov) | `docs/07_related_work_2025-2026.md` |
 | 7 | Offline checks: all comparisons without sub-16; above-chance test for famous vs unfamiliar | Done (18 Nov) | `results/real_data/2026-11-18_offline_checks.md` |
-| 8 | Robustness with EEGNet experts: EEG or MEG corrupted on 40 % of trials, faces vs scrambled | In progress (20 and 23 Nov): MEG 16/16, EEG 11/16 subjects | `results/server_sync/2026-11-23_1621/` (raw files; report after completion) |
+| 8 | Robustness with EEGNet experts: EEG or MEG corrupted on 40 % of trials, faces vs scrambled | In progress (20, 23 and 25 Nov): MEG 16/16, EEG 13/16 subjects | `results/server_sync/2026-11-25_1621/` (raw files; report after completion) |
 
 ## 2. Out of scope for this paper (future work)
 
