@@ -1,8 +1,6 @@
 # 04: Materials and Methods
 
-_Draft of the Methods section of the paper, 18 Nov 2026. It describes exactly what `code/pipeline/` v1.2 does. Author–year citations; the format will be adapted once the journal is chosen._
-
-_Items marked **[pending]** depend on the EEGNet robustness runs planned for 19 Nov._
+_Draft of the Methods section of the paper, 18 Nov 2026, updated 26 Nov 2026. It describes exactly what `code/pipeline/` v1.2 does. Author–year citations; the format will be adapted once the journal is chosen._
 
 ---
 
@@ -216,7 +214,8 @@ To test whether the switching models cope with a degraded modality, we simulated
 
 **Conditions.**
 - With the classical experts (faces vs scrambled), we ran four conditions: EEG or MEG corrupted on 20 % or 40 % of trials.
-- With the deep experts, we ran the two 40 % conditions **[pending]**.
+- With the deep experts (faces vs scrambled), we ran the two 40 % conditions: EEG or MEG corrupted on 40 % of trials.
+- In every condition, the three experts were retrained, including the expert of the intact modality. The same trials were corrupted with both types of expert.
 
 ## 2.10 Metrics and statistical analysis
 
@@ -273,7 +272,7 @@ Full results are given in the supplementary material.
 **Running times.**
 - Preprocessing took 6.6–8.8 min per participant.
 - The classical models took about 1 min per participant and problem.
-- The deep models took about 3 min per participant on one GPU.
+- The deep models took about 3 min per participant on one GPU on clean data, and 6.6–28.4 min per participant in the robustness conditions, which were partly run on GPUs shared with other jobs.
 
 **Availability.** The data are openly available on OpenNeuro (ds000117). The analysis code, the per-participant results and the scripts that produce every table will be released with the paper.
 

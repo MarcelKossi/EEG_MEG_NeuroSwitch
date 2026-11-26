@@ -192,3 +192,40 @@ Entries are chronological. Each one records what was done, problems and how they
 - Position to present to the supervisor (not yet confirmed): no second dataset in this paper. The claims are paired, within-dataset comparisons replicated across 16 participants, two decoding problems, two classifiers and several corruption levels; generalisation to other data is stated as a limitation and future work.
 - The EEGNet robustness experiment (EEG or MEG corrupted on 40 % of trials) will be run on 19 Nov, so that H3 is tested with both types of expert.
 - The name of the method is pending: "NeuroSwitch" is free in the research literature, but it is already used by commercial products.
+
+---
+
+## 20–26 Nov 2026: Robustness experiment with EEGNet experts
+
+**Work**
+- Ran the EEGNet robustness experiment on faces vs scrambled: EEG or MEG corrupted on 40 % of trials, 16 subjects per condition, with the same corruption as in the LDA experiment (5,429 of 13,537 trials corrupted in each condition).
+- Four lab sessions (20, 23, 25 and 26 Nov); one job per GPU on 25 and 26 Nov. `deep_models.py` resumes from the subjects already saved, so each session continued where the previous one stopped.
+- Group statistics with `aggregate.py`; report in `results/real_data/2026-11-26_deep_robustness_16_subjects.md`. Raw files: `results/server_sync/2026-11-26_1616/`.
+
+**Problems**
+- **Two jobs per GPU (20 Nov)** lowered the total throughput compared with one job per GPU. Rule adopted: one job per GPU.
+- **Running time varied widely**, from 6.6 to 28.4 min per subject, against about 3 min for the clean EEGNet run of 14 Nov. On 26 Nov, other processes occupied both GPUs at 100 %, yet a subject took only 10–13 min. The cause of the slow sessions was not identified.
+- **Daily server shutdown (around 16:25):** a subject interrupted by the shutdown restarts from its first fold at the next session.
+- **Logs:** the job logs are written outside the folder copied by the sync script. On 25 and 26 Nov, they were copied into it on the server before the sync (`cp $WORK/deep_robust_*_0.4_*.log $WORK/eegmeg_pipeline/`).
+
+**Results** (balanced accuracy, %, 16 subjects; clean values from 14 Nov)
+
+| Model | Clean | EEG corrupted 40 % | MEG corrupted 40 % |
+|---|---|---|---|
+| Early fusion | 89.1 | 86.7 | 77.0 |
+| Late fusion | 91.5 | 88.5 | 84.3 |
+| Switch: confidence | 91.8 | 88.8 | 84.2 |
+| Switch: learned gate | 90.8 | 88.3 | 84.0 |
+
+- With EEGNet experts, **late fusion is robust to a corrupted modality.** The switches are level with it (−0.2 to +0.3 point, n.s.) but do not beat it.
+- The learned gate beats early fusion in both conditions (+1.7 and +7.1 points, 16/16 subjects, Holm p = 0.0001) and re-routes trials away from the corrupted modality.
+- This differs from LDA, where late fusion and the confidence switch collapsed and the learned gate beat every fixed strategy.
+- Across both expert types, the learned gate is the only switch that is never significantly below the best fixed strategy in the four 40 % conditions.
+- In every condition, the oracle stays below the value expected from independent errors.
+- **Reproducibility:** reruns within the same condition gave identical results (sub-08, 23 and 25 Nov). The retrained MEG expert differed slightly from the clean run in 5 of 16 subjects (up to 1.4 points), probably because of non-deterministic GPU arithmetic.
+
+**Decisions and open points**
+- The sync folder `2026-11-23_1610` was not kept: its content is included in `2026-11-23_1621`.
+- No GPU computation is needed anymore for this paper.
+- To decide with the supervisor: how to frame the robustness result now that it depends on the type of expert, before updating the README.
+- To decide: running the sensitivity analysis without sub-16 on the two EEGNet robustness conditions (offline).
