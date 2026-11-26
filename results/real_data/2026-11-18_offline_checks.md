@@ -1,6 +1,6 @@
 # Real data: offline checks (18 Nov 2026)
 
-Both checks were computed from the result files already saved on 14 Nov (`results/server_sync/2026-11-14_1600/results/`). No data or GPU were needed.
+Both checks were computed from the result files already saved on 14 Nov (now in `results/raw/`). No data or GPU were needed.
 **Script:** `code/pipeline/offline_checks.py`. **Metric:** balanced accuracy (%).
 **Full output:** `results/real_data/2026-11-18_offline_checks_full_output.md`.
 

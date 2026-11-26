@@ -4,8 +4,7 @@
 
 | Item | Value |
 |---|---|
-| Server | GPU server (lab server), Ubuntu |
-| CPU / RAM | 128 cores / 503 GB |
+| Operating system | Ubuntu |
 | GPU | 2 × NVIDIA L40S (46 GB); one GPU used per job |
 | Driver / CUDA | 550.163.01 / 12.4 |
 
@@ -44,7 +43,7 @@ python -c "import torch; print(torch.__version__, torch.cuda.is_available())"   
 
 Raw and preprocessed data are **not** versioned (see `.gitignore`). They can be regenerated from OpenNeuro ds000117 v2.0.0 with the commands in `code/pipeline/README.md`.
 
-On the lab server, the working directory is `$WORK/<user>/eegmeg` (separate 246 GB partition). Unused files there may be removed automatically after about 30 days, so result files are copied back to this repository after each session (`code/tools/sync_from_server.ps1`).
+On the compute server, all data and results stay in one working directory (`$WORK`), on temporary storage. Result files are therefore copied back to the PC after each session (`code/tools/sync_from_server.ps1`). Only the curated result files in `results/raw/` are versioned.
 
 ## Reproducibility measures
 
@@ -53,10 +52,10 @@ On the lab server, the working directory is `$WORK/<user>/eegmeg` (separate 246 
 - **A JSON log per subject** for preprocessing (bad channels, ICA components removed, trials kept) and **a JSON file per subject × task** for results (all metrics, gate choices, fold details, hyperparameters).
 - **Deterministic folds:** leave-one-run-out within subject, leave-one-subject-out across subjects.
 
-## Measured runtimes (lab server)
+## Measured runtimes (compute server)
 
 | Step | Time |
 |---|---|
 | Preprocessing, one subject (6 runs) | 7.5 min (1 subject per process; 8 processes in parallel) |
-| Classical models, one subject × one task | a few minutes on 4 cores |
+| Classical models, one subject × one task | a few minutes on 4 CPU cores |
 | EEGNet smoke test (1 fold, 3 epochs) | 0.1 min on one L40S |

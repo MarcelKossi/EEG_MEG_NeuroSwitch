@@ -2,7 +2,7 @@
 
 **Pipeline:** v1.2. **Task:** faces vs scrambled. **Metric:** balanced accuracy (%), mean ± SD across 16 subjects.
 **Statistics:** paired two-sided Wilcoxon tests, Holm correction across the four comparisons of each switch.
-**Raw files:** `results/server_sync/2026-11-14_1600/results/{deep,robust_eeg_0.2,robust_eeg_0.4,robust_meg_0.2,robust_meg_0.4}/`.
+**Raw files:** `results/raw/{deep,robust_eeg_0.2,robust_eeg_0.4,robust_meg_0.2,robust_meg_0.4}/`.
 Classical results on clean data: `2026-11-14_classical_16_subjects.md`.
 
 ## 1. Deep experts (EEGNet)

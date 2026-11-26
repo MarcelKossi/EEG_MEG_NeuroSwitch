@@ -5,7 +5,7 @@
 > **Correction (pipeline v1.2, 13 Nov evening):** an indexing error in the inner cross-validation of `classical_models.py` (v1.0/v1.1) made the **switch results below invalid** (confidence, learned gate, subject-level). They are struck through and will be recomputed with v1.2. The EEG, MEG, early-fusion and late-fusion results are not affected. See `code/pipeline/CHANGELOG.md`.
 
 > **One subject only. No conclusion can be drawn.** Group statistics will be computed on the 16 subjects with `aggregate.py`.
-> Source: console output on the server (screenshots of 13 Nov). The raw JSON files are on the server in `$WORK/results/classical/<task>/sub-01.json`; copy them here with `code/tools/sync_from_server.ps1`.
+> Source: console output on the compute server (screenshots of 13 Nov). These preliminary v1.1 result files were not kept; the v1.2 results of all 16 subjects are in `results/raw/`.
 
 ## 1. Preprocessing (code v1.1)
 

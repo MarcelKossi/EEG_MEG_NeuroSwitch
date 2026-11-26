@@ -2,7 +2,7 @@
 
 **Pipeline:** v1.2 (`code/pipeline/CHANGELOG.md`).
 **Method:** shrinkage-LDA experts on 50-ms window means (0–800 ms), within-subject leave-one-run-out cross-validation (6 folds), gates trained on inner held-out predictions only.
-**Raw files:** `results/server_sync/2026-11-14_1441/` (one JSON per subject and task, preprocessing logs, aggregate tables).
+**Raw files:** `results/raw/classical/` (one JSON per subject and task, aggregate tables) and `results/raw/preprocessing/` (one preprocessing log per subject).
 **Metric:** balanced accuracy (%), mean ± SD across the 16 subjects. Statistics are paired two-sided Wilcoxon signed-rank tests with Holm correction across the four comparisons of each switch.
 
 ## 1. Preprocessing

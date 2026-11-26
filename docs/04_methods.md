@@ -267,7 +267,7 @@ Full results are given in the supplementary material.
 | SciPy | statistics (Wilcoxon tests) |
 | scikit-learn | 1.9.1 |
 | PyTorch | 2.14.1 (CUDA 12.6) |
-| Hardware | GPU server, 128 CPU cores, 503 GB RAM, 2 × NVIDIA L40S (46 GB) |
+| Hardware | 2 × NVIDIA L40S GPUs (46 GB) |
 
 **Running times.**
 - Preprocessing took 6.6–8.8 min per participant.

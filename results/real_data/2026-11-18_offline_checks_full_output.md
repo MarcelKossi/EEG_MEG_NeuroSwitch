@@ -1,6 +1,6 @@
 # Full output of offline_checks.py (18 Nov 2026)
 
-Command: `python offline_checks.py --results results/server_sync/2026-11-14_1600/results --exclude 16`
+Command (run on the result files of 14 Nov, now in `results/raw/`): `python offline_checks.py --results results/raw --exclude 16`
 
 Interpretation: `2026-11-18_offline_checks.md`.
 

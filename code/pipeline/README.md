@@ -23,20 +23,20 @@ From a lab computer (PowerShell), copy `code/pipeline` to the server:
 powershell -ExecutionPolicy Bypass -File code\tools\push_code_to_server.ps1
 ```
 
-The working directory on the server (`$WORK`) holds the Python environment, the data and the results. It is defined in `env.sh`; see `docs/05_server_guide.md`.
+The working directory on the server (`$WORK`) holds the Python environment, the data and the results. It is defined in `env.sh`, which sits in that directory; `<workdir>` below stands for its path.
 
 **Every new login** starts with:
 
 ```bash
-source $WORK/$USER/eegmeg/env.sh && cd $WORK/eegmeg_pipeline && source ../.venv/bin/activate
+source <workdir>/env.sh && cd $WORK/eegmeg_pipeline && source ../.venv/bin/activate
 ```
 
 ## 1. Download the data (inside tmux)
 
 ```bash
 tmux new -s dl
-source $WORK/$USER/eegmeg/env.sh && cd $WORK && source .venv/bin/activate
-df -h $WORK                            # $WORK is on the /var partition: need > 90 GB free
+source <workdir>/env.sh && cd $WORK && source .venv/bin/activate
+df -h $WORK                               # need > 90 GB free
 openneuro-py download --dataset ds000117 --target-dir $WORK/data/ds000117 --include sub-01/ses-meg
 du -sh $WORK/data/ds000117                # about 5.2 GB
 ```
@@ -131,8 +131,8 @@ The `summary_*.md` files and `results/*/*/sub-XX.json` are small. Copy them to y
 
 ## Rules
 
-- **Disk:** everything stays in `$WORK/$USER/eegmeg`, on the `/var` partition (246 GB, shared with the system). Check it with `df -h $WORK` (not `df -h /`) and never let it fill up.
-- **Back-ups:** `$WORK` may be cleaned of files unused for about 30 days. Keep the scripts and the `results/` folder copied elsewhere too.
+- **Disk:** everything stays in `$WORK`. Check the free space with `df -h $WORK` and never let it fill up.
+- **Back-ups:** if `$WORK` is on temporary storage, keep the scripts and the `results/` folder copied elsewhere too.
 - **GPUs:** one GPU only (`CUDA_VISIBLE_DEVICES=0` or `1`, whichever `nvidia-smi` shows free).
 - **SLURM:** if jobs must go through the scheduler, wrap these commands in an `sbatch` script.
 

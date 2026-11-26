@@ -1,0 +1,192 @@
+{
+  "metrics": {
+    "EEG": {
+      "accuracy": 0.8431372549019608,
+      "balanced_accuracy": 0.84355764059045,
+      "auc": 0.913386720851013
+    },
+    "MEG": {
+      "accuracy": 0.615916955017301,
+      "balanced_accuracy": 0.6145311659594812,
+      "auc": 0.6669814139723899
+    },
+    "Early fusion": {
+      "accuracy": 0.7301038062283737,
+      "balanced_accuracy": 0.733765612860814,
+      "auc": 0.7938803561823942
+    },
+    "Late fusion": {
+      "accuracy": 0.8408304498269896,
+      "balanced_accuracy": 0.8366790175103089,
+      "auc": 0.9172413793103447
+    },
+    "Switch: confidence": {
+      "accuracy": 0.845444059976932,
+      "balanced_accuracy": 0.8435755692344469,
+      "auc": 0.8982549453176358
+    },
+    "Switch: learned gate": {
+      "accuracy": 0.845444059976932,
+      "balanced_accuracy": 0.8418603956254109,
+      "auc": 0.8985178987629235
+    },
+    "Switch: subject-level": {
+      "accuracy": 0.8431372549019608,
+      "balanced_accuracy": 0.84355764059045,
+      "auc": 0.913386720851013
+    },
+    "Oracle EEG/MEG": {
+      "accuracy": 0.9411764705882353,
+      "balanced_accuracy": 0.940369330066336
+    },
+    "Oracle 3-way": {
+      "accuracy": 0.9642445213379469,
+      "balanced_accuracy": 0.9654186338373274
+    }
+  },
+  "subject": 6,
+  "task": "faces_vs_scrambled",
+  "method": "deep-EEGNet",
+  "n_trials": 867,
+  "corruption": {
+    "target": "meg",
+    "rate": 0.4,
+    "gain": 5.0,
+    "seed": 0,
+    "eeg_trials_hit": 0,
+    "meg_trials_hit": 351
+  },
+  "class_counts": {
+    "0": 290,
+    "1": 577
+  },
+  "subject_level_choice_per_fold": [
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg"
+  ],
+  "folds": [
+    {
+      "test_run": 1,
+      "val_run": 2,
+      "eeg": {
+        "epochs": 66,
+        "best_val_loss": 0.4305
+      },
+      "meg": {
+        "epochs": 34,
+        "best_val_loss": 0.6424
+      },
+      "fused": {
+        "epochs": 31,
+        "best_val_loss": 0.5755
+      }
+    },
+    {
+      "test_run": 2,
+      "val_run": 3,
+      "eeg": {
+        "epochs": 54,
+        "best_val_loss": 0.4567
+      },
+      "meg": {
+        "epochs": 33,
+        "best_val_loss": 0.6295
+      },
+      "fused": {
+        "epochs": 41,
+        "best_val_loss": 0.4709
+      }
+    },
+    {
+      "test_run": 3,
+      "val_run": 4,
+      "eeg": {
+        "epochs": 57,
+        "best_val_loss": 0.3554
+      },
+      "meg": {
+        "epochs": 32,
+        "best_val_loss": 0.6589
+      },
+      "fused": {
+        "epochs": 32,
+        "best_val_loss": 0.5715
+      }
+    },
+    {
+      "test_run": 4,
+      "val_run": 5,
+      "eeg": {
+        "epochs": 78,
+        "best_val_loss": 0.2613
+      },
+      "meg": {
+        "epochs": 34,
+        "best_val_loss": 0.6249
+      },
+      "fused": {
+        "epochs": 35,
+        "best_val_loss": 0.5482
+      }
+    },
+    {
+      "test_run": 5,
+      "val_run": 6,
+      "eeg": {
+        "epochs": 78,
+        "best_val_loss": 0.3254
+      },
+      "meg": {
+        "epochs": 28,
+        "best_val_loss": 0.6933
+      },
+      "fused": {
+        "epochs": 32,
+        "best_val_loss": 0.6382
+      }
+    },
+    {
+      "test_run": 6,
+      "val_run": 1,
+      "eeg": {
+        "epochs": 62,
+        "best_val_loss": 0.3956
+      },
+      "meg": {
+        "epochs": 35,
+        "best_val_loss": 0.6728
+      },
+      "fused": {
+        "epochs": 37,
+        "best_val_loss": 0.4691
+      }
+    }
+  ],
+  "hyperparameters": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 25,
+    "dropout": 0.5,
+    "seed": 42
+  },
+  "minutes": 8.65,
+  "only_eeg_correct": 0.32525951557093424,
+  "only_meg_correct": 0.09803921568627451,
+  "both_wrong": 0.058823529411764705,
+  "gate_confidence_share": {
+    "eeg": 0.7197,
+    "meg": 0.0692,
+    "fused": 0.2111
+  },
+  "gate_learned_share": {
+    "eeg": 0.6817,
+    "meg": 0.1165,
+    "fused": 0.2018
+  }
+}

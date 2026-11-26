@@ -7,7 +7,7 @@ _Updated 26 Nov 2026. All planned experiments are complete; the manuscript is in
 | # | Experiment | Status | Results |
 |---|---|---|---|
 | 1 | Feasibility simulation (head model, 16 simulated subjects) | Done (2 Nov) | `results/feasibility_simulation/` |
-| 2 | Download and preprocessing of ds000117 (16 subjects; 13,537 / 14,157 trials kept) | Done (13–14 Nov) | `results/server_sync/2026-11-14_1441/preprocessing_logs/` |
+| 2 | Download and preprocessing of ds000117 (16 subjects; 13,537 / 14,157 trials kept) | Done (13–14 Nov) | `results/raw/preprocessing/` |
 | 3 | Classical (LDA) benchmark, 2 tasks × 16 subjects | Done (14 Nov) | `results/real_data/2026-11-14_classical_16_subjects.md` |
 | 4 | Deep (EEGNet) benchmark, faces vs scrambled × 16 subjects | Done (14 Nov) | `results/real_data/2026-11-14_deep_and_robustness_16_subjects.md` |
 | 5 | Robustness: EEG or MEG corrupted on 20 % / 40 % of trials (LDA, faces vs scrambled) | Done (14 Nov) | same report as 4 |
@@ -54,5 +54,5 @@ These were decided against to keep the experiments strictly to what the paper ne
 |---|---|
 | Reviewers ask for generalisation beyond one dataset | State it as a limitation; name Cogitate as the next dataset |
 | Reviewers question synthetic corruption | Describe the corruption model precisely; propose real sensor failures as future work |
-| Raw server files deleted (`$WORK`, ~30 days) | All result files are already synced to this repository; the raw data can be re-downloaded from OpenNeuro |
+| Files on the server's temporary storage deleted (~30 days) | All result files are already synced to this repository; the raw data can be re-downloaded from OpenNeuro |
 | Reviewers note that, with EEGNet experts, the switch does not beat late fusion under corruption | Report both expert types in full; framing to be agreed with the supervisor |

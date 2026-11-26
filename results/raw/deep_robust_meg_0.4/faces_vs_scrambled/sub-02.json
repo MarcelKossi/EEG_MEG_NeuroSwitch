@@ -1,0 +1,192 @@
+{
+  "metrics": {
+    "EEG": {
+      "accuracy": 0.7658823529411765,
+      "balanced_accuracy": 0.7614374188392767,
+      "auc": 0.8396076815502946
+    },
+    "MEG": {
+      "accuracy": 0.6611764705882353,
+      "balanced_accuracy": 0.6607731495355109,
+      "auc": 0.717211067825392
+    },
+    "Early fusion": {
+      "accuracy": 0.7,
+      "balanced_accuracy": 0.6871441414444112,
+      "auc": 0.7380444011587255
+    },
+    "Late fusion": {
+      "accuracy": 0.7835294117647059,
+      "balanced_accuracy": 0.780891019878134,
+      "auc": 0.8596106782539207
+    },
+    "Switch: confidence": {
+      "accuracy": 0.7870588235294118,
+      "balanced_accuracy": 0.7799607931275596,
+      "auc": 0.8419613425232245
+    },
+    "Switch: learned gate": {
+      "accuracy": 0.7647058823529411,
+      "balanced_accuracy": 0.760557137149136,
+      "auc": 0.8327839376685646
+    },
+    "Switch: subject-level": {
+      "accuracy": 0.7658823529411765,
+      "balanced_accuracy": 0.7614374188392767,
+      "auc": 0.8396076815502946
+    },
+    "Oracle EEG/MEG": {
+      "accuracy": 0.9047058823529411,
+      "balanced_accuracy": 0.9054852162621116
+    },
+    "Oracle 3-way": {
+      "accuracy": 0.928235294117647,
+      "balanced_accuracy": 0.9293402257516732
+    }
+  },
+  "subject": 2,
+  "task": "faces_vs_scrambled",
+  "method": "deep-EEGNet",
+  "n_trials": 850,
+  "corruption": {
+    "target": "meg",
+    "rate": 0.4,
+    "gain": 5.0,
+    "seed": 0,
+    "eeg_trials_hit": 0,
+    "meg_trials_hit": 341
+  },
+  "class_counts": {
+    "0": 282,
+    "1": 568
+  },
+  "subject_level_choice_per_fold": [
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg"
+  ],
+  "folds": [
+    {
+      "test_run": 1,
+      "val_run": 2,
+      "eeg": {
+        "epochs": 86,
+        "best_val_loss": 0.4285
+      },
+      "meg": {
+        "epochs": 34,
+        "best_val_loss": 0.5439
+      },
+      "fused": {
+        "epochs": 34,
+        "best_val_loss": 0.5219
+      }
+    },
+    {
+      "test_run": 2,
+      "val_run": 3,
+      "eeg": {
+        "epochs": 50,
+        "best_val_loss": 0.5359
+      },
+      "meg": {
+        "epochs": 32,
+        "best_val_loss": 0.5817
+      },
+      "fused": {
+        "epochs": 30,
+        "best_val_loss": 0.6396
+      }
+    },
+    {
+      "test_run": 3,
+      "val_run": 4,
+      "eeg": {
+        "epochs": 56,
+        "best_val_loss": 0.5127
+      },
+      "meg": {
+        "epochs": 36,
+        "best_val_loss": 0.5547
+      },
+      "fused": {
+        "epochs": 45,
+        "best_val_loss": 0.6074
+      }
+    },
+    {
+      "test_run": 4,
+      "val_run": 5,
+      "eeg": {
+        "epochs": 55,
+        "best_val_loss": 0.55
+      },
+      "meg": {
+        "epochs": 30,
+        "best_val_loss": 0.662
+      },
+      "fused": {
+        "epochs": 29,
+        "best_val_loss": 0.6479
+      }
+    },
+    {
+      "test_run": 5,
+      "val_run": 6,
+      "eeg": {
+        "epochs": 66,
+        "best_val_loss": 0.4625
+      },
+      "meg": {
+        "epochs": 31,
+        "best_val_loss": 0.6502
+      },
+      "fused": {
+        "epochs": 31,
+        "best_val_loss": 0.6133
+      }
+    },
+    {
+      "test_run": 6,
+      "val_run": 1,
+      "eeg": {
+        "epochs": 110,
+        "best_val_loss": 0.4347
+      },
+      "meg": {
+        "epochs": 31,
+        "best_val_loss": 0.6248
+      },
+      "fused": {
+        "epochs": 31,
+        "best_val_loss": 0.6214
+      }
+    }
+  ],
+  "hyperparameters": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 25,
+    "dropout": 0.5,
+    "seed": 42
+  },
+  "minutes": 11.85,
+  "only_eeg_correct": 0.24352941176470588,
+  "only_meg_correct": 0.1388235294117647,
+  "both_wrong": 0.09529411764705882,
+  "gate_confidence_share": {
+    "eeg": 0.6494,
+    "meg": 0.1471,
+    "fused": 0.2035
+  },
+  "gate_learned_share": {
+    "eeg": 0.5859,
+    "meg": 0.1706,
+    "fused": 0.2435
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "metrics": {
+    "EEG": {
+      "accuracy": 0.704,
+      "balanced_accuracy": 0.6995137046861185,
+      "auc": 0.7653050397877984
+    },
+    "MEG": {
+      "accuracy": 0.9268571428571428,
+      "balanced_accuracy": 0.9270409666961391,
+      "auc": 0.980106100795756
+    },
+    "Early fusion": {
+      "accuracy": 0.9371428571428572,
+      "balanced_accuracy": 0.9382110226937813,
+      "auc": 0.9785971117005599
+    },
+    "Late fusion": {
+      "accuracy": 0.9451428571428572,
+      "balanced_accuracy": 0.945063365753021,
+      "auc": 0.9849336870026525
+    },
+    "Switch: confidence": {
+      "accuracy": 0.944,
+      "balanced_accuracy": 0.9442086648983201,
+      "auc": 0.9810433244916003
+    },
+    "Switch: learned gate": {
+      "accuracy": 0.9497142857142857,
+      "balanced_accuracy": 0.949351606248158,
+      "auc": 0.983348069554966
+    },
+    "Switch: subject-level": {
+      "accuracy": 0.9268571428571428,
+      "balanced_accuracy": 0.9270409666961391,
+      "auc": 0.9789448865310934
+    },
+    "Oracle EEG/MEG": {
+      "accuracy": 0.9817142857142858,
+      "balanced_accuracy": 0.9837164750957854
+    },
+    "Oracle 3-way": {
+      "accuracy": 0.9897142857142858,
+      "balanced_accuracy": 0.9923076923076923
+    }
+  },
+  "subject": 5,
+  "task": "faces_vs_scrambled",
+  "method": "deep-EEGNet",
+  "n_trials": 875,
+  "corruption": {
+    "target": "eeg",
+    "rate": 0.4,
+    "gain": 5.0,
+    "seed": 0,
+    "eeg_trials_hit": 362,
+    "meg_trials_hit": 0
+  },
+  "class_counts": {
+    "0": 290,
+    "1": 585
+  },
+  "subject_level_choice_per_fold": [
+    "fused",
+    "meg",
+    "meg",
+    "fused",
+    "fused",
+    "fused"
+  ],
+  "folds": [
+    {
+      "test_run": 1,
+      "val_run": 2,
+      "eeg": {
+        "epochs": 67,
+        "best_val_loss": 0.572
+      },
+      "meg": {
+        "epochs": 45,
+        "best_val_loss": 0.1457
+      },
+      "fused": {
+        "epochs": 46,
+        "best_val_loss": 0.1219
+      }
+    },
+    {
+      "test_run": 2,
+      "val_run": 3,
+      "eeg": {
+        "epochs": 61,
+        "best_val_loss": 0.6571
+      },
+      "meg": {
+        "epochs": 93,
+        "best_val_loss": 0.0732
+      },
+      "fused": {
+        "epochs": 61,
+        "best_val_loss": 0.0971
+      }
+    },
+    {
+      "test_run": 3,
+      "val_run": 4,
+      "eeg": {
+        "epochs": 38,
+        "best_val_loss": 0.6639
+      },
+      "meg": {
+        "epochs": 48,
+        "best_val_loss": 0.2595
+      },
+      "fused": {
+        "epochs": 38,
+        "best_val_loss": 0.2035
+      }
+    },
+    {
+      "test_run": 4,
+      "val_run": 5,
+      "eeg": {
+        "epochs": 34,
+        "best_val_loss": 0.6582
+      },
+      "meg": {
+        "epochs": 90,
+        "best_val_loss": 0.1035
+      },
+      "fused": {
+        "epochs": 112,
+        "best_val_loss": 0.0709
+      }
+    },
+    {
+      "test_run": 5,
+      "val_run": 6,
+      "eeg": {
+        "epochs": 52,
+        "best_val_loss": 0.6047
+      },
+      "meg": {
+        "epochs": 59,
+        "best_val_loss": 0.1813
+      },
+      "fused": {
+        "epochs": 41,
+        "best_val_loss": 0.1727
+      }
+    },
+    {
+      "test_run": 6,
+      "val_run": 1,
+      "eeg": {
+        "epochs": 44,
+        "best_val_loss": 0.5676
+      },
+      "meg": {
+        "epochs": 48,
+        "best_val_loss": 0.189
+      },
+      "fused": {
+        "epochs": 64,
+        "best_val_loss": 0.1373
+      }
+    }
+  ],
+  "hyperparameters": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 25,
+    "dropout": 0.5,
+    "seed": 42
+  },
+  "minutes": 16.76,
+  "only_eeg_correct": 0.054857142857142854,
+  "only_meg_correct": 0.2777142857142857,
+  "both_wrong": 0.018285714285714287,
+  "gate_confidence_share": {
+    "eeg": 0.0423,
+    "meg": 0.5451,
+    "fused": 0.4126
+  },
+  "gate_learned_share": {
+    "eeg": 0.0571,
+    "meg": 0.4354,
+    "fused": 0.5074
+  }
+}

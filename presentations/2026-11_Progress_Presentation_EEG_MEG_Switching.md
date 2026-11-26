@@ -123,9 +123,9 @@ Before using real data, we tested the idea in a **simulation built on a real hea
 ## 8. Implementation status
 
 **Infrastructure: ready**
-- Lab server (GPU server, 2 × NVIDIA L40S 46 GB, 128 cores, 503 GB RAM).
+- GPU server (2 × NVIDIA L40S, 46 GB).
 - Python environment: PyTorch 2.14 (CUDA 12.6, GPU confirmed), MNE 1.13, MNE-BIDS, braindecode, scikit-learn.
-- Storage: `/home` is full and `/scratch` is not writable for our account, so we work in `$WORK` (241 GB free). A `/scratch` folder has been requested from the admin.
+- Storage: a dedicated working directory on the server holds the data and the results.
 - Connection to OpenNeuro tested from the server.
 
 **Code: written and validated on mock and synthetic data**
@@ -170,7 +170,7 @@ Before using real data, we tested the idea in a **simulation built on a real hea
 1. **Main claim of the paper:** "switching beats fusion", or "robust adaptive fusion + which modality, for whom and why"? The feasibility study supports the second.
 2. **Tasks:** both faces vs scrambled and famous vs unfamiliar, or one main task?
 3. **Second dataset:** Cogitate MEG-EEG (2026), or a motor-imagery BCI dataset (Corsi et al., which may require contacting the authors)?
-4. **Server access:** support for the `/scratch` request, and whether long jobs can run overnight.
+4. **Server access:** whether long jobs can run overnight.
 
 ---
 

@@ -1,0 +1,192 @@
+{
+  "metrics": {
+    "EEG": {
+      "accuracy": 0.8525345622119815,
+      "balanced_accuracy": 0.8497130040517076,
+      "auc": 0.9225834458807641
+    },
+    "MEG": {
+      "accuracy": 0.7096774193548387,
+      "balanced_accuracy": 0.690189079683581,
+      "auc": 0.7410163032992475
+    },
+    "Early fusion": {
+      "accuracy": 0.7407834101382489,
+      "balanced_accuracy": 0.7241583060003859,
+      "auc": 0.8109142870924174
+    },
+    "Late fusion": {
+      "accuracy": 0.868663594470046,
+      "balanced_accuracy": 0.8598905074281304,
+      "auc": 0.9357635539262975
+    },
+    "Switch: confidence": {
+      "accuracy": 0.8594470046082949,
+      "balanced_accuracy": 0.8503279953694771,
+      "auc": 0.9155472216862821
+    },
+    "Switch: learned gate": {
+      "accuracy": 0.8513824884792627,
+      "balanced_accuracy": 0.8407172486976655,
+      "auc": 0.9147814972023924
+    },
+    "Switch: subject-level": {
+      "accuracy": 0.8525345622119815,
+      "balanced_accuracy": 0.8497130040517076,
+      "auc": 0.9225834458807641
+    },
+    "Oracle EEG/MEG": {
+      "accuracy": 0.9596774193548387,
+      "balanced_accuracy": 0.9573726606212618
+    },
+    "Oracle 3-way": {
+      "accuracy": 0.9735023041474654,
+      "balanced_accuracy": 0.9721686282076019
+    }
+  },
+  "subject": 7,
+  "task": "faces_vs_scrambled",
+  "method": "deep-EEGNet",
+  "n_trials": 868,
+  "corruption": {
+    "target": "meg",
+    "rate": 0.4,
+    "gain": 5.0,
+    "seed": 0,
+    "eeg_trials_hit": 0,
+    "meg_trials_hit": 348
+  },
+  "class_counts": {
+    "0": 284,
+    "1": 584
+  },
+  "subject_level_choice_per_fold": [
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg",
+    "eeg"
+  ],
+  "folds": [
+    {
+      "test_run": 1,
+      "val_run": 2,
+      "eeg": {
+        "epochs": 102,
+        "best_val_loss": 0.2165
+      },
+      "meg": {
+        "epochs": 31,
+        "best_val_loss": 0.6027
+      },
+      "fused": {
+        "epochs": 32,
+        "best_val_loss": 0.4297
+      }
+    },
+    {
+      "test_run": 2,
+      "val_run": 3,
+      "eeg": {
+        "epochs": 75,
+        "best_val_loss": 0.473
+      },
+      "meg": {
+        "epochs": 47,
+        "best_val_loss": 0.5346
+      },
+      "fused": {
+        "epochs": 33,
+        "best_val_loss": 0.5326
+      }
+    },
+    {
+      "test_run": 3,
+      "val_run": 4,
+      "eeg": {
+        "epochs": 89,
+        "best_val_loss": 0.2875
+      },
+      "meg": {
+        "epochs": 32,
+        "best_val_loss": 0.6164
+      },
+      "fused": {
+        "epochs": 31,
+        "best_val_loss": 0.5437
+      }
+    },
+    {
+      "test_run": 4,
+      "val_run": 5,
+      "eeg": {
+        "epochs": 85,
+        "best_val_loss": 0.1999
+      },
+      "meg": {
+        "epochs": 30,
+        "best_val_loss": 0.6581
+      },
+      "fused": {
+        "epochs": 34,
+        "best_val_loss": 0.5424
+      }
+    },
+    {
+      "test_run": 5,
+      "val_run": 6,
+      "eeg": {
+        "epochs": 56,
+        "best_val_loss": 0.403
+      },
+      "meg": {
+        "epochs": 33,
+        "best_val_loss": 0.57
+      },
+      "fused": {
+        "epochs": 36,
+        "best_val_loss": 0.4963
+      }
+    },
+    {
+      "test_run": 6,
+      "val_run": 1,
+      "eeg": {
+        "epochs": 81,
+        "best_val_loss": 0.4451
+      },
+      "meg": {
+        "epochs": 30,
+        "best_val_loss": 0.6189
+      },
+      "fused": {
+        "epochs": 31,
+        "best_val_loss": 0.549
+      }
+    }
+  ],
+  "hyperparameters": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 25,
+    "dropout": 0.5,
+    "seed": 42
+  },
+  "minutes": 8.17,
+  "only_eeg_correct": 0.25,
+  "only_meg_correct": 0.10714285714285714,
+  "both_wrong": 0.04032258064516129,
+  "gate_confidence_share": {
+    "eeg": 0.7753,
+    "meg": 0.1002,
+    "fused": 0.1244
+  },
+  "gate_learned_share": {
+    "eeg": 0.6993,
+    "meg": 0.1705,
+    "fused": 0.1302
+  }
+}

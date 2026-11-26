@@ -2,7 +2,7 @@
 
 **Pipeline:** v1.2 (`deep_models.py`, unchanged). **Task:** faces vs scrambled. **Metric:** balanced accuracy (%), mean ± SD across 16 subjects (SD with ddof = 0, as in `aggregate.py`).
 **Statistics:** paired two-sided Wilcoxon signed-rank tests across subjects, Holm correction across the four comparisons of each switch (`aggregate.py`).
-**Raw files:** `results/server_sync/2026-11-26_1616/results/deep_robust_eeg_0.4/` and `.../deep_robust_meg_0.4/` (16 JSON files each, plus `summary_faces_vs_scrambled_balanced_accuracy.md`).
+**Raw files:** `results/raw/deep_robust_eeg_0.4/` and `results/raw/deep_robust_meg_0.4/` (16 JSON files each, plus `summary_faces_vs_scrambled_balanced_accuracy.md`).
 **Clean-data reference:** EEGNet results of 14 Nov (`2026-11-14_deep_and_robustness_16_subjects.md`, section 1). LDA robustness: same report, section 2.
 **Runs:** 20, 23, 25 and 26 Nov 2026, on the lab server (2 × NVIDIA L40S).
 
@@ -72,7 +72,7 @@
 
 ## 4. Comparison with the LDA experts (40 % conditions)
 
-Mean balanced accuracy (%). LDA values from the 14 Nov report (section 2) and from `results/server_sync/2026-11-26_1616/results/robust_{eeg,meg}_0.4/`.
+Mean balanced accuracy (%). LDA values from the 14 Nov report (section 2) and from `results/raw/robust_{eeg,meg}_0.4/`.
 
 | Model | LDA, EEG 40 % | LDA, MEG 40 % | EEGNet, EEG 40 % | EEGNet, MEG 40 % |
 |---|---|---|---|---|

@@ -39,16 +39,14 @@ Entries are chronological. Each one records what was done, problems and how they
 ## 5 Nov 2026: Computing environment
 
 **Work**
-- Set up the lab server:
-  - GPU server: 2 × NVIDIA L40S, 128 cores, 503 GB RAM;
-  - driver 550 / CUDA 12.4.
+- Set up the GPU server: 2 × NVIDIA L40S, driver 550 / CUDA 12.4.
 - Created an isolated Python environment:
   - PyTorch 2.14.1 built for CUDA 12.6 (GPU access confirmed);
   - MNE 1.13.2, mne-bids, scikit-learn, braindecode.
   - The PyTorch build is pinned with a constraint file, so other packages cannot replace it with a CPU build.
 
 **Problems**
-- **Storage:** the shared `/home` partition was full and `/scratch` was not writable for my account. I work in `$WORK/<user>/eegmeg`, with all caches redirected there, and requested a `/scratch` directory from the administrator.
+- **Storage:** the default user storage on the server could not hold a dataset of this size. I set up a dedicated working directory (`$WORK`) and redirected all caches there.
 - **Dataset layout:** in ds000117 v2.0.0 the MaxFilter calibration and cross-talk files are stored per subject, and the `derivatives/meg_derivatives` folder of earlier versions no longer exists. The download now targets `sub-XX/ses-meg` only.
 
 ---
@@ -92,7 +90,7 @@ Entries are chronological. Each one records what was done, problems and how they
 **Problems and fixes (pipeline v1.1)**
 1. **SSS origin.** The sphere fitted to the digitised head points sat 37 mm anterior to the head-frame origin, probably because of nose points. This risks a poor SSS reconstruction over posterior sensors, where face-related activity is expected. I switched to a fixed origin of (0, 0, 40) mm for bad-channel detection, Maxwell filtering and EEG interpolation.
 2. **EEG bad-channel detection was biased by blinks.** Six frontal electrodes were flagged because blinks inflate their variance, and interpolating them would have penalised EEG in the comparison. Detection now uses a robust amplitude measure (median absolute deviation), and ICA removes the blinks. Only EEG002, EEG004 (flagged in most runs) and EEG070 (one run) remain interpolated.
-3. **Storage.** `$WORK` is on a separate 246 GB partition with 111 GB free. That is enough for the full dataset and derivatives (~55 GB margin), but nothing else should be stored there.
+3. **Storage.** The working directory has enough free space for the full dataset and derivatives (~55 GB margin), but nothing else should be stored there.
 
 **Preliminary result, subject 01** (single subject; not interpreted)
 - Balanced accuracy, faces vs scrambled: EEG 61.3%, MEG 80.7%, **early fusion 87.9%**, late fusion 76.7%.
@@ -141,7 +139,7 @@ Entries are chronological. Each one records what was done, problems and how they
 - **Gradiometers.** Gradiometers alone matched the full MEG array.
 
 **Problems and observations**
-- **The lab server is switched off every evening** (around 16:25) and restarted in the morning. Long jobs must finish within the session, and results are synced to the PC before shutdown.
+- **The server is available only during daily sessions.** Long jobs must finish within a session, and results are synced to the PC before the end of each session.
 - **Sub-16:** 24.4 % of trials rejected, with no bad channels detected. To be investigated: which sensor type triggers the rejections.
 - **Sub-03:** a block of 12 MEG sensors (MEG22xx) was flagged in run 6 only and reconstructed by SSS.
 - **Metric.** ROC-AUC is not comparable between switching models and single models. Balanced accuracy stays the primary metric.
@@ -200,12 +198,12 @@ Entries are chronological. Each one records what was done, problems and how they
 **Work**
 - Ran the EEGNet robustness experiment on faces vs scrambled: EEG or MEG corrupted on 40 % of trials, 16 subjects per condition, with the same corruption as in the LDA experiment (5,429 of 13,537 trials corrupted in each condition).
 - Four lab sessions (20, 23, 25 and 26 Nov); one job per GPU on 25 and 26 Nov. `deep_models.py` resumes from the subjects already saved, so each session continued where the previous one stopped.
-- Group statistics with `aggregate.py`; report in `results/real_data/2026-11-26_deep_robustness_16_subjects.md`. Raw files: `results/server_sync/2026-11-26_1616/`.
+- Group statistics with `aggregate.py`; report in `results/real_data/2026-11-26_deep_robustness_16_subjects.md`. Raw files: `results/raw/`.
 
 **Problems**
 - **Two jobs per GPU (20 Nov)** lowered the total throughput compared with one job per GPU. Rule adopted: one job per GPU.
 - **Running time varied widely**, from 6.6 to 28.4 min per subject, against about 3 min for the clean EEGNet run of 14 Nov. On 26 Nov, other processes occupied both GPUs at 100 %, yet a subject took only 10–13 min. The cause of the slow sessions was not identified.
-- **Daily server shutdown (around 16:25):** a subject interrupted by the shutdown restarts from its first fold at the next session.
+- **End of the daily session:** a subject interrupted at the end of a session restarts from its first fold at the next session.
 - **Logs:** the job logs are written outside the folder copied by the sync script. On 25 and 26 Nov, they were copied into it on the server before the sync (`cp $WORK/deep_robust_*_0.4_*.log $WORK/eegmeg_pipeline/`).
 
 **Results** (balanced accuracy, %, 16 subjects; clean values from 14 Nov)

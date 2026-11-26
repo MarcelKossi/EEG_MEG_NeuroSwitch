@@ -27,3 +27,6 @@ desktop.ini
 .vscode/
 .idea/
 code/tools/server_settings.ps1
+
+# Raw copies synced from the compute server (local only; curated copies are in results/raw/)
+results/server_sync/
